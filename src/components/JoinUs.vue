@@ -1,17 +1,17 @@
 <template>
   <div class="box">
-    <div style="display: flex">
-      <div class="logoBox">
-        <img src="../assets/images/logo.png" alt="logo" width="60" />
-        <div class="title">MEMORY</div>
+      <div>
+          INTELLIGENT AGGREGATION
       </div>
-      <div class="menuBox">
-        <a class="menuItem">NFT铸造</a>
-        <a class="menuItem">NFT-RICH</a>
-        <a class="menuItem">NFT交易</a>
+      <div class='followUs'>FOLLOW US</div>
+      <div class='metaBox'>
+          <a href="">
+              <img src="../assets/images/twitter.png" alt="twitter">
+          </a>
+          <a href="">
+              <img src="../assets/images/telegram.png" alt="telegram" style='margin-left:2rem'>
+          </a>
       </div>
-    </div>
-    <img src="../assets/images/lang.png" width="40" />
   </div>
 </template>
 
@@ -38,32 +38,25 @@ export default {
 </script>
 <style scoped>
 .box {
-  padding: 1.5rem 2rem;
-  background-color: #191b27;
-  color: #ffffff;
+  background-color: #d326e3;
+  height: 180px;
+  z-index: 10;
+  position: relative;
+  margin-top: -3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.logoBox {
-  display: flex;
-  align-items: center;
-}
-.title {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.5rem;
-  word-spacing: 40;
   font-weight: bold;
-  margin-left: 2rem;
+  color: #ffffff;
+  padding: 3rem 4rem 0px 6rem;
+
 }
-.menuBox {
-  margin-left: 5rem;
-  display: flex;
-  align-items: center;
+.followUs{
+    margin-left: 4rem;
 }
-.menuItem {
-  font-size: 1.5rem;
-  margin: 0 1.5rem;
-  cursor: pointer;
+.metaBox{
+    display: flex;
 }
 </style>

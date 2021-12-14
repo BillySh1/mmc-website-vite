@@ -2,6 +2,7 @@
   <div class="main">
     <Topbar />
     <Hero />
+    <JoinUs />
   </div>
 </template>
 
@@ -9,6 +10,7 @@
 import { reactive, toRefs, onBeforeMount, onMounted } from "vue";
 import Topbar from "./Topbar.vue";
 import Hero from './Hero.vue'
+import JoinUs from './JoinUs.vue'
 interface DataProps {}
 export default {
   name: "layout",
@@ -28,7 +30,8 @@ export default {
   },
   components: {
     Topbar,
-    Hero
+    Hero,
+    JoinUs
   },
 };
 </script>

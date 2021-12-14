@@ -30,9 +30,10 @@ export default {
 <style scoped>
 .box{
     background-image: url('../assets/images/herobg.png');
-    background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 95vh;
+    height: 100vh;
+    position: relative;
+    z-index: 100;
 }
 </style>
