@@ -1,15 +1,12 @@
 <template>
-  <div>
-      <Topbar/>
-  </div>
+  <div>22</div>
 </template>
 
 <script lang='ts'>
 import { reactive,toRefs,onBeforeMount,onMounted} from 'vue'
-import Topbar from './Topbar.vue'
 interface DataProps {}
 export default {
-    name: 'layout',
+    name: '',
       setup() {
           console.log('1-开始创建组件-setup')
           const data: DataProps = reactive({

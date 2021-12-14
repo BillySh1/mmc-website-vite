@@ -9,16 +9,13 @@ const router = createRouter({
     routes: [
         {
             path: '/',
-            redirect: '/home'
+            redirect: '/index'
         },
         {
-            path: '/home',
-            component: () => import('../components/HelloWorld.vue')
-        },
-        {
-            path: '/hello',
-            component: () => import('../components/HelloWorld.vue')
+            path: '/index',
+            component: () => import('../components/layout.vue')
         }
+       
     ]
 })
 
