@@ -3,14 +3,21 @@
     <Topbar />
     <Hero />
     <JoinUs />
+    <Pledge />
+    <News />
+
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import { reactive, toRefs, onBeforeMount, onMounted } from "vue";
-import Topbar from "./Topbar.vue";
+import Topbar from "./Topbar.vue"
 import Hero from './Hero.vue'
 import JoinUs from './JoinUs.vue'
+import Pledge from './Pledge.vue'
+import Footer from './Footer.vue'
+import News from './New.vue'
 interface DataProps {}
 export default {
   name: "layout",
@@ -31,7 +38,10 @@ export default {
   components: {
     Topbar,
     Hero,
-    JoinUs
+    JoinUs,
+    Pledge,
+    News,
+    Footer
   },
 };
 </script>
