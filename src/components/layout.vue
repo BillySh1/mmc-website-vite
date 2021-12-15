@@ -5,19 +5,28 @@
     <JoinUs />
     <Pledge />
     <News />
-
+    <Plates />
+    <NFTInfo />
+    <NFTRich />
+    <GameFi />
+    <AboutUs />
     <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import { reactive, toRefs, onBeforeMount, onMounted } from "vue";
-import Topbar from "./Topbar.vue"
-import Hero from './Hero.vue'
-import JoinUs from './JoinUs.vue'
-import Pledge from './Pledge.vue'
-import Footer from './Footer.vue'
-import News from './New.vue'
+import Topbar from "./Topbar.vue";
+import Hero from "./Hero.vue";
+import JoinUs from "./JoinUs.vue";
+import Pledge from "./Pledge.vue";
+import Footer from "./Footer.vue";
+import News from "./New.vue";
+import Plates from "./Plates.vue";
+import NFTInfo from "./NFTInfo.vue";
+import NFTRich from "./NFTRich.vue";
+import GameFi from "./GameFi.vue";
+import AboutUs from './AboutUs.vue'
 interface DataProps {}
 export default {
   name: "layout",
@@ -41,7 +50,11 @@ export default {
     JoinUs,
     Pledge,
     News,
-    Footer
+    Plates,
+    NFTInfo,
+    NFTRich,
+    GameFi,AboutUs,
+    Footer,
   },
 };
 </script>
