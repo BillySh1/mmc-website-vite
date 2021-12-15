@@ -1,7 +1,7 @@
 <template>
   <div class="box">
     <div class="left">
-      <img src="../assets/images/rect.jpg" alt="rect"/>
+      <img src="../assets/images/rect.jpg" alt="rect" />
       <div class="leftPara">
         <div class="leftParaTitle">NEWS</div>
         <div class="leftParaContent">
@@ -10,8 +10,10 @@
         </div>
       </div>
     </div>
-    <div class='right'>
-        <div class='divider'></div>
+    <div class="right">
+      <img src="../assets/images/divider.png" alt="divider" />
+      <div class="link">GO TO <br />MEMORYSWAP</div>
+      <img src="../assets/images/mmcBlack.png" alt="mmc">
     </div>
   </div>
 </template>
@@ -37,24 +39,24 @@ export default {
   },
 };
 </script>
-<style lang='less' scoped>
+<style lang="less" scoped>
 .box {
   background-color: white;
   padding: 5rem 7rem;
   display: flex;
   justify-content: space-between;
+  font-style: italic;
 }
 
-.left{
-    display: flex;
-    align-items: center;
-    img{
-        height: 12rem;
-        margin-right: 1rem;
-    }
+.left {
+  display: flex;
+  align-items: center;
+  img {
+    height: 12rem;
+    margin-right: 1rem;
+  }
 }
 .leftPara {
-  width: 50%;
   margin-left: 1rem;
 }
 .leftParaTitle {
@@ -73,5 +75,18 @@ export default {
   line-height: 1.2;
   word-spacing: 0.2rem;
   letter-spacing: 0.1rem;
+}
+.right {
+  display: flex;
+  align-items: center;
+  .link {
+    cursor: pointer;
+    font-size: 3rem;
+    font-family: Arial;
+    font-weight: normal;
+    text-decoration: underline;
+    color: #009de8;
+    margin: 1rem 4rem 0rem 3rem;
+  }
 }
 </style>
