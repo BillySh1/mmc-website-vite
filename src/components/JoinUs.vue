@@ -39,10 +39,7 @@ export default {
 <style scoped>
 .box {
   background-color: #d326e3;
-  height: 180px;
   z-index: 10;
-  position: relative;
-  margin-top: -4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,7 +47,7 @@ export default {
   line-height: 1.5rem;
   font-weight: bold;
   color: #ffffff;
-  padding: 3rem 4rem 0px 6rem;
+  padding: 3rem 4rem 3rem 6rem;
 
 }
 .followUs{

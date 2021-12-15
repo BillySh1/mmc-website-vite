@@ -38,7 +38,7 @@ export default {
 </script>
 <style scoped>
 .box {
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   background-color: #191b27;
   color: #ffffff;
   display: flex;
