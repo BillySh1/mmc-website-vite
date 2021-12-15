@@ -49,7 +49,7 @@ export default {
     display: flex;
     align-items: center;
     img{
-        height: 8rem;
+        height: 12rem;
         margin-right: 1rem;
     }
 }

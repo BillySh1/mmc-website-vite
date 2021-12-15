@@ -42,7 +42,7 @@ export default {
   height: 180px;
   z-index: 10;
   position: relative;
-  margin-top: -3rem;
+  margin-top: -4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
