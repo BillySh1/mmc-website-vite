@@ -61,5 +61,6 @@ export default {
 <style scoped>
 .main {
   height: 100vh;
+  overflow-x: hidden;
 }
 </style>
