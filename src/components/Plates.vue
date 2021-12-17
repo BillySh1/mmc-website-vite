@@ -27,11 +27,51 @@
             <p>抽奖</p>
           </div>
         </div>
-        <div class="item">1</div>
-        <div class="item">1</div>
-        <div class="item">1</div>
-        <div class="item">1</div>
-        <div class="item">1</div>
+        <div class="item">
+          <div class="itemLeft">
+            <img src="../assets/images/circle.png" alt="circle" />
+            <div class="vcenter">NFT市场</div>
+          </div>
+          <div>
+            <p>用户铸造NFT</p>
+            <p>NFT交易MMC销毁</p>
+            <p>全网征集故事</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="itemLeft">
+            <img src="../assets/images/circle.png" alt="circle" />
+            <div class="vcenter">IDO</div>
+          </div>
+          <div>
+            <p>IDO项目方案</p>
+            <p>优质项目首次代币发行</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="itemLeft">
+            <img src="../assets/images/circle.png" alt="circle" />
+            <div class="vcenter">理财收益</div>
+          </div>
+          <div>
+            <p>LP质押挖矿</p>
+            <p>单币无损挖矿</p>
+          </div>
+        </div>
+       <div class="item">
+          <div class="itemLeft">
+            <img src="../assets/images/circle.png" alt="circle" />
+            <div class="vcenter">NFT生态</div>
+          </div>
+          <div>
+            <p>MMC抽取盲盒</p>
+            <p>NFT生态收益</p>
+            <p>高等级卡牌售卖</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="../assets/images/infinity.png" alt="ini">
+        </div>
       </div>
       <div class="bottom">CORE PLATES</div>
     </div>
@@ -67,7 +107,7 @@ export default {
   height: 100vh;
 }
 .left {
-  width: 25%;
+  width: 20%;
   background: #eedd22;
   display: flex;
   flex-direction: column;
@@ -106,18 +146,19 @@ export default {
   background-image: url("../assets/images/platesBg.jpg");
   background-size: 100% 100%;
   padding: 5rem;
-  .grid {
+  .grid { 
     font-size: 1.2rem;
     font-family: Source Han Sans TC;
     font-weight: bold;
     text-decoration: underline;
     color: #ffffff;
     width: 100%;
-    padding-right: 5rem;
+    padding-right: 10rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
     .item {
+      text-align: right;
       width: 80%;
       position: relative;
       display: flex;
