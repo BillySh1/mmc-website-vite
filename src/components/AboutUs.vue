@@ -59,6 +59,6 @@ export default {
   color: #ffffff;
   line-height: 1.5;
   text-align: center;
-  word-break: break-all;
+  word-break: keep-all;
 }
 </style>
