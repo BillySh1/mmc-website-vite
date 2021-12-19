@@ -20,7 +20,7 @@
     <a class="go2Swap" href="https://memoryswap.net" target="_blank">
       <div class="title">Go to SWAP</div>
       <div class="sub">Create your own value</div>
-      <img src="../assets/images/yellowArrow.png" alt="arrow" />
+      <img class='arrow' src="../assets/images/yellowArrow.png" alt="arrow" />
     </a>
   </div>
 </template>
@@ -110,21 +110,56 @@ export default {
     margin: 0.5rem 0;
   }
 }
-.ani{
+.ani {
   animation: easeIn 3s;
 }
 
 @keyframes easeIn {
   0% {
     opacity: 0;
-    margin-top: 2rem;
   }
   50% {
     opacity: 0.5;
   }
   100% {
     opacity: 1;
-    margin-top: 0;
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .box {
+    padding: 5%;
+    background-size: cover;
+    flex-direction: column;
+  }
+  .title{
+    font-size: 3rem;
+  }
+  .subTitle{
+    font-size: 2rem;
+    margin: 2rem 0;
+    .secondary{
+      font-size: 1.5rem;
+    }
+  }
+  .right{
+    font-size: 2rem;
+  }
+  .go2Swap{
+    padding: 5%;
+    .title{
+      font-size: 1.5rem;
+    }
+    .sub{
+      font-size: 1rem;
+    }
+    .arrow{
+      width: 100%;
+    }
+  }
+  .right{
+    margin-bottom: 10rem;
   }
 }
 </style>

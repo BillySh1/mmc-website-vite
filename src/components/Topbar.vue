@@ -2,7 +2,12 @@
   <div class="box">
     <div style="display: flex">
       <div class="logoBox">
-        <img src="../assets/images/logo.png" alt="logo" width="60" />
+        <img
+          class="img"
+          src="../assets/images/logo.png"
+          alt="logo"
+          width="60"
+        />
         <div class="title">MEMORY</div>
       </div>
       <div class="menuBox">
@@ -11,7 +16,7 @@
         <a class="menuItem">NFT交易</a>
       </div>
     </div>
-    <img src="../assets/images/lang.png" width="40" />
+    <img class="lang" src="../assets/images/lang.png" width="40" />
   </div>
 </template>
 
@@ -36,7 +41,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="less" scoped>
 .box {
   padding: 1rem 2rem;
   background-color: #191b27;
@@ -44,6 +49,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .logoBox {
   display: flex;
@@ -51,7 +57,6 @@ export default {
 }
 .title {
   font-size: 2rem;
-  line-height: 1.5rem;
   word-spacing: 40;
   font-weight: bold;
   margin-left: 2rem;
@@ -60,10 +65,36 @@ export default {
   margin-left: 5rem;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .menuItem {
   font-size: 1.5rem;
   margin: 0 1.5rem;
   cursor: pointer;
+  word-break: keep-all;
 }
+@media screen and (max-width: 1280px) {
+  .box {
+    padding: 1% 5%;
+  }
+  .title {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  .img {
+    width: 2rem;
+  }
+  .menuBox {
+    margin-left: 1rem;
+  }
+  .menuItem {
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+  .lang {
+    width: 2rem;
+    place-self: flex-end  ;
+  }
+}
+
 </style>
