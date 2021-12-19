@@ -1,9 +1,9 @@
 <template>
   <div class="box">
     <div class="left">
-      <div class="title">Memory coin</div>
+      <div class="title ani">Memory coin</div>
       <div>
-        <div class="subTitle">
+        <div class="subTitle ani">
           <div>Discovery</div>
           <div>Collect</div>
           <div>Extraordinary story NFT</div>
@@ -11,17 +11,17 @@
         </div>
       </div>
     </div>
-    <div class="right">
+    <div class="right ani">
       <div>TIME COURSE</div>
       <div>CORE PLATES</div>
       <div>NFT-RICH</div>
       <div>智能聚合交易</div>
     </div>
-    <div class="go2Swap">
+    <a class="go2Swap" href="https://memoryswap.net" target="_blank">
       <div class="title">Go to SWAP</div>
       <div class="sub">Create your own value</div>
-      <img src="../assets/images/yellowArrow.png" alt="arrow">
-    </div>
+      <img src="../assets/images/yellowArrow.png" alt="arrow" />
+    </a>
   </div>
 </template>
 
@@ -90,6 +90,7 @@ export default {
   margin-bottom: 16rem;
 }
 .go2Swap {
+  text-decoration: none;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -107,6 +108,23 @@ export default {
     font-weight: 400;
     color: #f0ff49;
     margin: 0.5rem 0;
+  }
+}
+.ani{
+  animation: easeIn 3s;
+}
+
+@keyframes easeIn {
+  0% {
+    opacity: 0;
+    margin-top: 2rem;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
   }
 }
 </style>

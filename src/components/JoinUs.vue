@@ -5,10 +5,10 @@
       </div>
       <div class='followUs'>FOLLOW US</div>
       <div class='metaBox'>
-          <a href="">
+          <a href="https://twitter.com/BTCJod?s=09" target="_blank">
               <img src="../assets/images/twitter.png" alt="twitter">
           </a>
-          <a href="">
+          <a href="https://t.me/MemorySwap1" target="_blank">
               <img src="../assets/images/telegram.png" alt="telegram" style='margin-left:2rem'>
           </a>
       </div>

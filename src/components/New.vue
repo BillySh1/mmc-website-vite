@@ -12,7 +12,7 @@
     </div>
     <div class="right">
       <img src="../assets/images/divider.png" alt="divider" />
-      <div class="link">GO TO <br />MEMORYSWAP</div>
+      <a href="https://memoryswap.net" target="_blank" class="link">GO TO <br />MEMORYSWAP</a>
       <img src="../assets/images/mmcBlack.png" alt="mmc">
     </div>
   </div>
@@ -80,6 +80,7 @@ export default {
   display: flex;
   align-items: center;
   .link {
+    text-decoration: none;
     cursor: pointer;
     font-size: 3rem;
     font-family: Arial;
