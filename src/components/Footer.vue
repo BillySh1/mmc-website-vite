@@ -8,7 +8,7 @@
     <img class="star" src="../assets/images/en-star.png" alt="en" />
     <div class="footer">
       <img src="../assets/images/mmcBlack.png" alt="logo" />
-      <div class="content">GAME FI | NFT-THE THREE KINDOMS <nbsp> <nbsp> MMC | AGAINST </div>
+      <div class="content">GAME FI | NFT-THE THREE KINDOMS  MMC | AGAINST </div>
       <div class="content">MMC | INTELLIGENT AGGREGATION TRANSACTION</div>
       <div class="sub">©2021 MMC LABs. All Rights Reserved. “MEmory” is a registered trademark of MMC LABs in various territories worldwide.</div>
       <div class="icons">
