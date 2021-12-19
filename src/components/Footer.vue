@@ -78,7 +78,6 @@ export default {
     font-family: Arial;
     font-weight: 900;
     color: #ffffff;
-    line-height: 1.5rem;
     font-style: italic;
   }
   .sub {

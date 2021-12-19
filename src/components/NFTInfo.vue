@@ -2,7 +2,7 @@
   <div class="box">
     <div class="title">NFT 创作交易平台</div>
     <div class="divider">
-      <img src="../assets/images/divider.png" alt="divider" />
+      <img src="../assets/images/divider.png" alt="divider"  />
     </div>
     <div class="content">
       <div>我们就是这个世界的艺术家， 不停的创作着不同的故事</div>
@@ -38,7 +38,7 @@ export default {
 <style lang="less" scoped>
 .box {
   background-color: white;
-  padding: 5rem 7rem;
+  padding: 2rem 7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,5 +56,18 @@ export default {
   font-weight: 400;
   color: #0b152b;
   line-height: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .box{
+    flex-wrap: wrap;
+    padding: 5%;
+    gap: 1rem;
+    .divider{
+      max-width: 1rem;
+      img{
+        width: 100%;
+      }
+    }
+  }
 }
 </style>

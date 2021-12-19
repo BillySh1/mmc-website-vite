@@ -10,7 +10,7 @@
         <div>{{ leftContent }}</div>
         <div>{{ leftContent }}</div>
       </div>
-      <img src="../assets/images/line.png" alt="line" />
+      <img class='line' src="../assets/images/line.png" alt="line" />
       <div class="more">MORE</div>
     </div>
     <div class="right">
@@ -58,7 +58,7 @@
             <p>单币无损挖矿</p>
           </div>
         </div>
-       <div class="item">
+        <div class="item">
           <div class="itemLeft">
             <img src="../assets/images/circle.png" alt="circle" />
             <div class="vcenter">NFT生态</div>
@@ -70,7 +70,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="../assets/images/infinity.png" alt="ini">
+          <img class="infinity" src="../assets/images/infinity.png" alt="ini" />
         </div>
       </div>
       <div class="bottom">CORE PLATES</div>
@@ -146,7 +146,7 @@ export default {
   background-image: url("../assets/images/platesBg.jpg");
   background-size: 100% 100%;
   padding: 5rem;
-  .grid { 
+  .grid {
     font-size: 1.2rem;
     font-family: Source Han Sans TC;
     font-weight: bold;
@@ -181,6 +181,52 @@ export default {
     font-weight: 900;
     color: #ffffff;
     text-align: right;
+  }
+}
+
+@media screen and(max-width: 1280px) {
+  .box {
+    height: unset;
+    flex-direction: column-reverse;
+  }
+  .left {
+    width: 100%;
+    padding: 5% 0;
+    align-items: center;
+    .line{
+      max-width: 80%;
+    }    
+  }
+  .right {
+    width: 100%;
+    padding: 5%;
+    background-size: cover;
+    .bottom {
+      font-size: 2rem;
+      margin: 1rem 0;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .right {
+    padding: 10% 0;
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+      padding:0;
+      .item {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        .infinity {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+  .bottom{
+    margin-top: 2rem !important;
   }
 }
 </style>

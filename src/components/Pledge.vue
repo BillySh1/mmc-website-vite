@@ -23,7 +23,7 @@
         <div class="blue">THE ECLOGY GRADUALLY 2022.01</div>
         <div class="bottom">
           <div class="more">MORE</div>
-          <img src="../assets/images/right.png" alt="right" />
+          <img class="arrow" src="../assets/images/right.png" alt="right" />
         </div>
       </div>
     </div>
@@ -53,7 +53,6 @@ export default {
 </script>
 <style lang="less" scoped>
 .box {
-  width: 100%;
   background-image: url("../assets/images/pledgeBg.png");
   background-size: 100% 100%;
   display: flex;
@@ -102,15 +101,16 @@ export default {
     font-size: 2rem;
     font-weight: bold;
     color: #0091c9;
-    line-height: 1.5rem;
     margin-bottom: 6rem;
   }
   .bottom {
     display: flex;
     flex-direction: row-reverse;
     cursor: pointer;
-    img{
-        margin-right: 2rem;
+    align-items: center;
+    img {
+      margin-right: 2rem;
+      max-height: 2rem;
     }
     .more {
       border: 10px solid white;
@@ -121,6 +121,42 @@ export default {
       font-family: zihun143-zhengkuchaojihei;
       font-weight: bold;
       color: #ffffff;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .box {
+    height: unset;
+    background-size: cover;
+    flex-direction: column;
+    padding: 5%;
+  }
+  .content {
+    width: 100%;
+    flex-direction: column;
+    .left {
+      width: 100%;
+      justify-content: center;
+      .border {
+        padding: 3rem 5rem;
+      }
+    }
+    .right {
+      width: 100%;
+      margin: 2rem 0rem;
+      .pledgeMining {
+        font-size: 2rem;
+        border: 0.3rem solid white;
+        padding: 2rem 0;
+      }
+    }
+    .bottom {
+      align-items: center;
+      .more {
+        border: 0.3rem solid white;
+        font-size: 1.5rem;
+      }
     }
   }
 }
