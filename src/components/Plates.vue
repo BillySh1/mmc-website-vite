@@ -29,7 +29,7 @@
         </div>
         <div class="item">
           <div class="itemLeft">
-            <img src="../assets/images/circle.png" alt="circle" />
+            <img src="../assets/images/border2.jpg" alt="border2" />
             <div class="vcenter">NFT市场</div>
           </div>
           <div>
@@ -40,7 +40,7 @@
         </div>
         <div class="item">
           <div class="itemLeft">
-            <img src="../assets/images/circle.png" alt="circle" />
+            <img src="../assets/images/trai.png" alt="trai" />
             <div class="vcenter">IDO</div>
           </div>
           <div>
@@ -50,7 +50,7 @@
         </div>
         <div class="item">
           <div class="itemLeft">
-            <img src="../assets/images/circle.png" alt="circle" />
+            <img src="../assets/images/radius.png" alt="radius" />
             <div class="vcenter">理财收益</div>
           </div>
           <div>
@@ -60,7 +60,7 @@
         </div>
         <div class="item">
           <div class="itemLeft">
-            <img src="../assets/images/circle.png" alt="circle" />
+            <img src="../assets/images/rect.png" alt="rect" />
             <div class="vcenter">NFT生态</div>
           </div>
           <div>
