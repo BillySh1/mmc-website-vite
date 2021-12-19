@@ -2,14 +2,14 @@
   <div class="box">
     <div class="up">
       <div class="upLeft">
-        <img src="../assets/images/cube.png" alt="cube" />
+        <img class='cube' src="../assets/images/cube.png" alt="cube" />
         <div class="content">
           我们就是这个世界中的艺术家，不停的创作着不同的故事。MEMORY
           COIN每一个值得珍藏的故事都会在平台制作成一个基于HRC-721的NFT VR卡片。
         </div>
         <div class="more">MORE</div>
       </div>
-      <img src="../assets/images/man.png" alt="man" />
+      <img  class='man' src="../assets/images/man.png" alt="man" />
     </div>
     <div class="down">GAMEFI</div>
   </div>
@@ -38,12 +38,11 @@ export default {
 </script>
 <style lang="less" scoped>
 .box {
-  height: 100vh;
   background-color: #0b152b;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10%;
+  padding: 10% 0;
 }
 .up {
   display: flex;
@@ -91,4 +90,21 @@ export default {
   font-weight: 900;
   color: #ffffff;
 }
+
+@media screen and (max-width: 1024px) {
+  .up{
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+    .man{
+      max-width: 80%;
+    }
+    .cube{
+      max-width: 80%;
+      margin: 2rem 0;
+    }
+  }
+}
+
 </style>

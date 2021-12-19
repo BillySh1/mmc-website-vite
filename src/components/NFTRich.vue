@@ -11,9 +11,9 @@
           <div class="more">MORE</div>
         </div>
         <div class="down">
-          <div class="border1"></div>
-          <div class="border2"></div>
-          <div class="border3"></div>
+          <div class="border1 border"></div>
+          <div class="border2 border"></div>
+          <div class="border3 border"></div>
         </div>
       </div>
     </div>
@@ -67,7 +67,6 @@ export default {
       font-family: Arial;
       font-weight: 900;
       color: #ffffff;
-      line-height: 83px;
     }
     .content {
       font-size: 1.8rem;
@@ -94,35 +93,74 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .border1 {
+    gap: 1rem;
+    .border {
       border: 20px solid #000000;
+      background-color: white;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .border1 {
       width: 400px;
       height: 400px;
-      background-color: white;
       background-image: url("../assets/images/nft2.jpg");
-      background-size: 100% 100%;
-      background-position: center;
-      background-repeat: no-repeat;
     }
     .border2 {
-      border: 20px solid #000000;
       width: 250px;
       height: 400px;
-      background-color: white;
       background-image: url("../assets/images/nft1.png");
-      background-size: 100% 100%;
-      background-position: center;
-      background-repeat: no-repeat;
     }
     .border3 {
-      border: 20px solid #000000;
       width: 250px;
       height: 400px;
-      background-color: white;
       background-image: url("../assets/images/nft3.png");
-      background-size: 100% 100%;
-      background-position: center;
-      background-repeat: no-repeat;
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .box {
+    height: unset;
+    background-size: cover;
+    .container {
+      height: unset;
+      padding: 5%;
+      background-size: cover;
+      .inner{
+        width: 100%
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .down {
+    flex-direction: column;
+    padding: 5%;
+    .border1 {
+      max-width: 300px;
+      max-height: 300px;
+    }
+    .border2 {
+      max-width: 300px;
+      max-height: 300px;
+    }
+    .border3 {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+}
+@media screen and (max-widh: 768px) {
+  .inner {
+    width: 100%;
+    .up {
+      .title {
+        font-size: 2rem;
+      }
+      .content {
+        font-size: 1.8rem;
+      }
+      
     }
   }
 }
