@@ -107,12 +107,12 @@ export default {
       background-image: url("../assets/images/nft2.jpg");
     }
     .border2 {
-      width: 250px;
+      width: 300px;
       height: 400px;
       background-image: url("../assets/images/nft1.png");
     }
     .border3 {
-      width: 250px;
+      width: 300px;
       height: 400px;
       background-image: url("../assets/images/nft3.png");
     }
@@ -132,7 +132,7 @@ export default {
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
   .down {
     flex-direction: column;
     padding: 5%;

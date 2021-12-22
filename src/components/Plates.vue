@@ -213,12 +213,19 @@ export default {
   .right {
     padding: 10% 0;
     .grid {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       padding:0;
       .item {
         width: 100%;
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        font-size: 1rem;
+        .itemLeft{
+          img{
+            width: 8rem
+          }
+        }
         .infinity {
           max-width: 80%;
         }

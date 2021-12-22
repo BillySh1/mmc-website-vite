@@ -48,26 +48,31 @@ export default {
   font-family: zihun143-zhengkuchaojihei;
   font-weight: 400;
   color: #484848;
-  line-height: 1.5;
 }
 .content {
   font-size: 1.5rem;
   font-family: Source Han Sans TC;
   font-weight: 400;
   color: #0b152b;
-  line-height: 3rem;
 }
 @media screen and (max-width: 768px) {
   .box{
     flex-wrap: wrap;
     padding: 5%;
-    gap: 1rem;
+    gap: 0.5rem;
     .divider{
       max-width: 1rem;
       img{
-        width: 100%;
+        width: 50%;
       }
     }
+  .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .content{
+    font-size: 1rem;
+  }
   }
 }
 </style>

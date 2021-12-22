@@ -94,24 +94,38 @@ export default {
     flex-wrap: wrap;
     padding: 1rem;
     .left{
-      flex-direction: column;
-      gap: 2rem;
+      .leftParaTitle{
+        font-size: 1rem;
+      }
+      .leftParaContent{
+        font-size: 1rem;
+      }
+      img{
+        height: 4rem;
+      }
     }
     .right{
       flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 1rem;
       gap: 1rem;
-      margin-top: 2rem;
       img{
         width: 1rem;
       }
       .link{
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin: 0rem 1rem;
       }
       .mmc{
-        width: 4rem
+        width: 2rem
       }
     }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  img{
+    
   }
 }
 </style>
