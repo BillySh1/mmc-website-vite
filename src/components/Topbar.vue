@@ -65,7 +65,6 @@ export default {
   margin-left: 5rem;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 .menuItem {
   font-size: 1.5rem;
@@ -73,6 +72,7 @@ export default {
   cursor: pointer;
   word-break: keep-all;
 }
+
 @media screen and (max-width: 1280px) {
   .box {
     padding: 1% 5%;
@@ -93,7 +93,34 @@ export default {
   }
   .lang {
     width: 2rem;
-    place-self: flex-end  ;
+    place-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .title{
+    font-size: x-small;
+  }
+  .img{
+    width: 1rem;
+  }
+  .menuBox{
+    margin-left: 0.5rem;
+  }
+  .menuItem{
+    font-size: x-small;
+    margin: 0 0.5rem;
+  }
+  .lang{
+    width: 1rem
+  }
+}
+@media screen and (max-width:320px) {
+  .title{
+    margin-left: 0;
+  }
+  .menuItem{
+    margin: 0;
   }
 }
 
