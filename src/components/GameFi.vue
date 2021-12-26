@@ -19,15 +19,12 @@
 import { reactive, toRefs, onBeforeMount, onMounted } from "vue";
 interface DataProps {}
 export default {
-  name: "",
+  name: "gameFi",
   setup() {
-    console.log("1-开始创建组件-setup");
     const data: DataProps = reactive({});
     onBeforeMount(() => {
-      console.log("2.组件挂载页面之前执行----onBeforeMount");
     });
     onMounted(() => {
-      console.log("3.-组件挂载到页面之后执行-------onMounted");
     });
     const refData = toRefs(data);
     return {
@@ -97,14 +94,28 @@ export default {
     flex-direction: column-reverse;
     align-items: center;
     gap: 2rem;
+    .upLeft{
+      .content{
+        font-size: 1.2rem;
+        margin: 2.5rem 0;
+      }
+      .more{
+        border: 10px solid white;
+        font-size: 1.5rem;
+      }
+    }
     .man{
-      max-width: 80%;
+      max-width: 100%;
     }
     .cube{
-      max-width: 80%;
+      max-width: 60%;
       margin: 2rem 0;
     }
   }
+  .down{
+    font-size: 1.5rem;
+  }
+  
 }
 
 </style>

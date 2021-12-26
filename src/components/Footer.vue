@@ -2,12 +2,12 @@
   <div class="box">
     <div class="title">
       <div style="margin-right: 2rem">TIME COURSE</div>
-      <img src="../assets/images/colorBall.png" alt="color" />
+      <img class='colorBall' src="../assets/images/colorBall.png" alt="color" />
     </div>
     <img class="rightTop" src="../assets/images/rightTop.png" alt="rightTop" />
     <img class="star" src="../assets/images/en-star.png" alt="en" />
     <div class="footer">
-      <img src="../assets/images/mmcBlack.png" alt="logo" />
+      <img class='logo' src="../assets/images/mmcBlack.png" alt="logo" />
       <div class="content">GAME FI | NFT-THE THREE KINDOMS  MMC | AGAINST </div>
       <div class="content">MMC | INTELLIGENT AGGREGATION TRANSACTION</div>
       <div class="sub">©2021 MMC LABs. All Rights Reserved. “MEmory” is a registered trademark of MMC LABs in various territories worldwide.</div>
@@ -95,6 +95,34 @@ export default {
     gap: 3rem;
     .item {
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .title{
+    font-size: 2rem;
+    .colorBall{
+      max-width: 2rem;
+    }
+  }
+  .rightTop{
+    max-width: 6rem;
+  }
+  .footer{
+    .logo{
+      max-width: 5rem;
+    }
+    .content{
+      font-size: 1.5rem;
+    }
+    .sub{
+      font-size: 1rem;
+    }
+    .icons{
+      img{
+        max-width: 3rem;
+      }
     }
   }
 }

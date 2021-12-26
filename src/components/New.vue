@@ -96,15 +96,17 @@ export default {
     .left{
       .leftParaTitle{
         font-size: 1rem;
+        margin-bottom: 0.5rem;
       }
       .leftParaContent{
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
       img{
-        height: 4rem;
+        height: 6rem;
       }
     }
     .right{
+      width: 100%;
       flex-wrap: wrap;
       justify-content: space-between;
       margin-top: 1rem;
@@ -117,15 +119,11 @@ export default {
         margin: 0rem 1rem;
       }
       .mmc{
-        width: 2rem
+        width: 4rem
       }
     }
   }
 }
 
-@media screen and (max-width: 540px) {
-  img{
-    
-  }
-}
+
 </style>

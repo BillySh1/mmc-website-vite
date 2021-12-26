@@ -36,13 +36,10 @@ interface DataProps {}
 export default {
   name: "",
   setup() {
-    console.log("1-开始创建组件-setup");
     const data: DataProps = reactive({});
     onBeforeMount(() => {
-      console.log("2.组件挂载页面之前执行----onBeforeMount");
     });
     onMounted(() => {
-      console.log("3.-组件挂载到页面之后执行-------onMounted");
     });
     const refData = toRefs(data);
     return {
@@ -131,6 +128,7 @@ export default {
     background-size: cover;
     flex-direction: column;
     padding: 5%;
+    padding-top: 4rem;
   }
   .content {
     width: 100%;
@@ -139,23 +137,35 @@ export default {
       width: 100%;
       justify-content: center;
       .border {
-        padding: 3rem 5rem;
+        padding: 3.5rem 3rem;
+        img{
+          max-width: 5rem;
+        }
       }
     }
     .right {
+      font-size: 1rem;
       width: 100%;
       margin: 2rem 0rem;
+      text-align: center;
+      .subMiningContent{
+        font-size: 1.2rem;
+      }
       .pledgeMining {
         font-size: 2rem;
         border: 0.3rem solid white;
-        padding: 2rem 0;
+        padding: 0;
       }
+    }
+    .blue{
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
     .bottom {
       align-items: center;
       .more {
         border: 0.3rem solid white;
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
     }
   }

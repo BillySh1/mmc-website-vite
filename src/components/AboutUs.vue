@@ -49,7 +49,6 @@ export default {
   font-family: Arial;
   font-weight: normal;
   color: #ffffff;
-  line-height: 1.5;
 }
 .content {
   max-width: 75%;
@@ -60,5 +59,19 @@ export default {
   line-height: 1.5;
   text-align: center;
   word-break: keep-all;
+}
+@media screen and (max-width: 1280px) {
+  .box{
+    padding: 2rem 0 9rem 0;
+  }
+  .title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .content{
+    max-width: 90%;
+    font-size: 1.5rem;
+  }
 }
 </style>

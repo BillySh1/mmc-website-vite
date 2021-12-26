@@ -6,7 +6,6 @@
     </div>
     <div class="content">
       <div>我们就是这个世界的艺术家， 不停的创作着不同的故事</div>
-      <br />
       <div>
         MEMORY COIN每一个值得珍藏的故事都会在平台制作成一个基于HRC_721的NFT-VR卡片。
       </div>
@@ -48,6 +47,7 @@ export default {
   font-family: zihun143-zhengkuchaojihei;
   font-weight: 400;
   color: #484848;
+  width: -webkit-fill-available;
 }
 .content {
   font-size: 1.5rem;
@@ -57,9 +57,7 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .box{
-    flex-wrap: wrap;
-    padding: 5%;
-    gap: 0.5rem;
+    padding: 5% 2px;
     .divider{
       max-width: 1rem;
       img{
@@ -67,11 +65,11 @@ export default {
       }
     }
   .title{
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
   }
   .content{
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
   }
 }

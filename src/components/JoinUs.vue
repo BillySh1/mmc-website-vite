@@ -20,13 +20,10 @@ interface DataProps {}
 export default {
   name: "",
   setup() {
-    console.log("1-开始创建组件-setup");
     const data: DataProps = reactive({});
     onBeforeMount(() => {
-      console.log("2.组件挂载页面之前执行----onBeforeMount");
     });
     onMounted(() => {
-      console.log("3.-组件挂载到页面之后执行-------onMounted");
     });
     const refData = toRefs(data);
     return {
@@ -60,7 +57,7 @@ export default {
     flex-wrap: wrap;
     word-break: keep-all;
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 5%;
   }
   .metaBox {
