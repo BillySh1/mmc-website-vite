@@ -11,23 +11,33 @@
         <div class="title">MEMORY</div>
       </div>
       <div class="menuBox">
-        <a class="menuItem">NFT铸造</a>
-        <a class="menuItem">NFT-RICH</a>
-        <a class="menuItem">NFT交易</a>
+        <a @click="() => hrefJump(0)" class="menuItem">{{t('mining')}}</a>
+        <a @click="() => hrefJump(1)" class="menuItem">NFT-RICH</a>
+        <a @click="() => hrefJump(2)" class="menuItem">NFT交易</a>
       </div>
     </div>
     <img class="lang" src="../assets/images/lang.png" width="40" />
+    <md-drawer :md-active.sync="isDrawerOpen"></md-drawer>
   </div>
 </template>
 
 <script lang="ts">
 import { reactive, toRefs, onBeforeMount, onMounted } from "vue";
 interface DataProps {}
+import { useI18n } from "vue-i18n";
 export default {
   name: "",
   setup() {
-    console.log("1-开始创建组件-setup");
-    const data: DataProps = reactive({});
+    const { t } = useI18n();
+    const data: DataProps = reactive({
+      isDrawerOpen: true,
+    });
+    const hrefJump = (index) => {
+      const map = ["nftMining", "nftRich", "nftExchange"];
+      document
+        .getElementById(map[index])
+        .scrollIntoView({ behavior: "smooth" });
+    };
     onBeforeMount(() => {
       console.log("2.组件挂载页面之前执行----onBeforeMount");
     });
@@ -37,6 +47,8 @@ export default {
     const refData = toRefs(data);
     return {
       ...refData,
+      hrefJump,
+      t,
     };
   },
 };
@@ -65,6 +77,10 @@ export default {
   margin-left: 5rem;
   display: flex;
   align-items: center;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 .menuItem {
   font-size: 1.5rem;
@@ -98,30 +114,29 @@ export default {
 }
 
 @media screen and (max-width: 540px) {
-  .title{
+  .title {
     font-size: x-small;
   }
-  .img{
+  .img {
     width: 1rem;
   }
-  .menuBox{
+  .menuBox {
     margin-left: 0.5rem;
   }
-  .menuItem{
+  .menuItem {
     font-size: x-small;
     margin: 0 0.5rem;
   }
-  .lang{
-    width: 1rem
+  .lang {
+    width: 1rem;
   }
 }
-@media screen and (max-width:320px) {
-  .title{
+@media screen and (max-width: 320px) {
+  .title {
     margin-left: 0;
   }
-  .menuItem{
+  .menuItem {
     margin: 0;
   }
 }
-
 </style>

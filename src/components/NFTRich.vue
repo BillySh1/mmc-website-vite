@@ -1,5 +1,5 @@
 <template>
-  <div class="box">
+  <div id="nftRich" class="box">
     <div class="container">
       <div class="inner">
         <div class="up">
@@ -126,8 +126,8 @@ export default {
       height: unset;
       padding: 5%;
       background-size: cover;
-      .inner{
-        width: 100%
+      .inner {
+        width: 100%;
       }
     }
   }
@@ -160,7 +160,6 @@ export default {
       .content {
         font-size: 1.8rem;
       }
-      
     }
   }
 }

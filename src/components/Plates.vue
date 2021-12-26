@@ -1,5 +1,5 @@
 <template>
-  <div class="box">
+  <div id="nftExchange" class="box">
     <div class="left">
       <div class="content">
         <div class="content1">{{ leftContent }}</div>

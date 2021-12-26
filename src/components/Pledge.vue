@@ -1,5 +1,5 @@
 <template>
-  <div class="box">
+  <div id="nftMining" class="box">
     <div class="content">
       <div class="left">
         <div class="border">

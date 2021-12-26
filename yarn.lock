@@ -7,6 +7,44 @@
   resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.16.5.tgz"
   integrity sha512-+Ce7T5iPNWzfu9C1aB5tN3Lyafs5xb3Ic7vBWyZL2KXT3QSdD1dD3CvgOzPmQKoNNRt6uauc0XwNJTQtXC2/Mw==
 
+"@intlify/core-base@9.2.0-beta.25":
+  version "9.2.0-beta.25"
+  resolved "https://registry.yarnpkg.com/@intlify/core-base/-/core-base-9.2.0-beta.25.tgz#f48dfc6c05fcc7d7929d88010e1b605d076224c5"
+  integrity sha512-ReJ1qytJQ1pD3YIM474MFzAFIA/MNO3LiIogXQslK89WVFxCklAQOQQOe075AMAi90ng+fZM4/bp6hslQgjn4w==
+  dependencies:
+    "@intlify/devtools-if" "9.2.0-beta.25"
+    "@intlify/message-compiler" "9.2.0-beta.25"
+    "@intlify/shared" "9.2.0-beta.25"
+    "@intlify/vue-devtools" "9.2.0-beta.25"
+
+"@intlify/devtools-if@9.2.0-beta.25":
+  version "9.2.0-beta.25"
+  resolved "https://registry.yarnpkg.com/@intlify/devtools-if/-/devtools-if-9.2.0-beta.25.tgz#44bcfeb43912d9eff71cbdd712964692aef7e933"
+  integrity sha512-iqBKiQ4rRP0xbbkq00o/TmfmsEBQulnCMO8JuZ5kBBroXqwyp65dQ6DbwojjP+TG0ON5IFKL39JntF96sin1LQ==
+  dependencies:
+    "@intlify/shared" "9.2.0-beta.25"
+
+"@intlify/message-compiler@9.2.0-beta.25":
+  version "9.2.0-beta.25"
+  resolved "https://registry.yarnpkg.com/@intlify/message-compiler/-/message-compiler-9.2.0-beta.25.tgz#360df77b5233c05a29b0a3512cda292f22bcdfc7"
+  integrity sha512-/YMG6LmQLvD8uHCJvWLaK0t8exYbek3ya4BZZ99AcM5+JC/JRdLIK8WiVJnGpfrvleQArxvHed4GokS+oWZ5rQ==
+  dependencies:
+    "@intlify/shared" "9.2.0-beta.25"
+    source-map "0.6.1"
+
+"@intlify/shared@9.2.0-beta.25":
+  version "9.2.0-beta.25"
+  resolved "https://registry.yarnpkg.com/@intlify/shared/-/shared-9.2.0-beta.25.tgz#a178975e77dcca59203f46269037ea1d4b858899"
+  integrity sha512-I2L05aWh0azr5KwQjLV7gMTN0SrdglgMAfpJniT53Pvvc8l+OTs8IEhdPCQwsbgOravpWt14O7m3deOzw3ln6w==
+
+"@intlify/vue-devtools@9.2.0-beta.25":
+  version "9.2.0-beta.25"
+  resolved "https://registry.yarnpkg.com/@intlify/vue-devtools/-/vue-devtools-9.2.0-beta.25.tgz#6b0ffd2280b4bf38d74adce7d2fc74dbc655ee27"
+  integrity sha512-47rmZmrM1FihTWQkixgYu3lOCBpT1NyGfYSxSYnUw1s2Ky8w84S81nYmbus2GZjfj/zAovkKyRNclETVTy6O2Q==
+  dependencies:
+    "@intlify/core-base" "9.2.0-beta.25"
+    "@intlify/shared" "9.2.0-beta.25"
+
 "@vitejs/plugin-vue@^2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-2.0.1.tgz#db0e5eacf96358e04cc501c9008079b25a70a4ac"
@@ -53,6 +91,11 @@
   dependencies:
     "@vue/compiler-dom" "3.2.26"
     "@vue/shared" "3.2.26"
+
+"@vue/devtools-api@^6.0.0-beta.13":
+  version "6.0.0-beta.21.1"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.21.1.tgz#f1410f53c42aa67fa3b01ca7bdba891f69d7bc97"
+  integrity sha512-FqC4s3pm35qGVeXRGOjTsRzlkJjrBLriDS9YXbflHLsfA9FrcKzIyWnLXoNm+/7930E8rRakXuAc2QkC50swAw==
 
 "@vue/reactivity-transform@3.2.26":
   version "3.2.26"
@@ -424,7 +467,7 @@ source-map-js@^1.0.1:
   resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.1.tgz"
   integrity sha512-4+TN2b3tqOCd/kaGRJ/sTYA0tR0mdXx26ipdolxcwtJVqEnqNYvlCAt1q3ypy4QMlYus+Zh34RNtYLoq2oQ4IA==
 
-source-map@^0.6.1, source-map@~0.6.0:
+source-map@0.6.1, source-map@^0.6.1, source-map@~0.6.0:
   version "0.6.1"
   resolved "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
@@ -451,6 +494,16 @@ vite@^2.7.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+vue-i18n@^9.2.0-beta.25:
+  version "9.2.0-beta.25"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-9.2.0-beta.25.tgz#cd26980ab4e7b2131198c23e243d74f3f19f93a1"
+  integrity sha512-l/A5W5KLuwnI5NHOV0WQrF79BwVku83ed7wHmq5NLm/Uofmsc8qmgJ95zw8EK3fmSBzb3F1NbjxxK2DZcg8c/g==
+  dependencies:
+    "@intlify/core-base" "9.2.0-beta.25"
+    "@intlify/shared" "9.2.0-beta.25"
+    "@intlify/vue-devtools" "9.2.0-beta.25"
+    "@vue/devtools-api" "^6.0.0-beta.13"
+
 vue-router@^4.0.0-beta.13:
   version "4.0.0-beta.13"
   resolved "https://registry.npmjs.org/vue-router/-/vue-router-4.0.0-beta.13.tgz"
@@ -466,3 +519,8 @@ vue@^3.0.4:
     "@vue/runtime-dom" "3.2.26"
     "@vue/server-renderer" "3.2.26"
     "@vue/shared" "3.2.26"
+
+vuetify@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-2.6.1.tgz#5cdd26c51980618b0b92625a2829cd4956813eaa"
+  integrity sha512-WtqarqEIJlhiwl1TShtkq58xtfbHpn4BjkuQtsL7mAs2eHCo7QjA3tUm7Dx/NmDc4wa2ghUUth36jTdG+CCWRg==
