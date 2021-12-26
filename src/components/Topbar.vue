@@ -17,7 +17,6 @@
       </div>
     </div>
     <img class="lang" src="../assets/images/lang.png" width="40" />
-    <md-drawer :md-active.sync="isDrawerOpen"></md-drawer>
   </div>
 </template>
 
@@ -39,10 +38,8 @@ export default {
         .scrollIntoView({ behavior: "smooth" });
     };
     onBeforeMount(() => {
-      console.log("2.组件挂载页面之前执行----onBeforeMount");
     });
     onMounted(() => {
-      console.log("3.-组件挂载到页面之后执行-------onMounted");
     });
     const refData = toRefs(data);
     return {

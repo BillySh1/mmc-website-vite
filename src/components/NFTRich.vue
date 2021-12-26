@@ -11,9 +11,9 @@
           <div class="more">MORE</div>
         </div>
         <div class="down">
-          <div class="border1 border"></div>
-          <div class="border2 border"></div>
-          <div class="border3 border"></div>
+          <div class="border">NFT</div>
+          <div class="border">NFT</div>
+          <div class="border">NFT</div>
         </div>
       </div>
     </div>
@@ -95,26 +95,15 @@ export default {
     justify-content: space-between;
     gap: 1rem;
     .border {
-      border: 20px solid #000000;
-      background-color: white;
-      background-size: 100% 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .border1 {
-      width: 400px;
-      height: 400px;
-      background-image: url("../assets/images/nft2.jpg");
-    }
-    .border2 {
+      border: 1rem solid #000000;
+      background-color: whitesmoke;
+      color: grey;
+      font-weight: bold;
+      font-size: 2rem;
+      text-align: center;
+      line-height: 300px;
       width: 300px;
-      height: 400px;
-      background-image: url("../assets/images/nft1.png");
-    }
-    .border3 {
-      width: 300px;
-      height: 400px;
-      background-image: url("../assets/images/nft3.png");
+      height: 300px;
     }
   }
 }
@@ -133,32 +122,32 @@ export default {
   }
 }
 @media screen and (max-width: 1280px) {
-  .down {
-    flex-direction: column;
-    padding: 5%;
-    .border1 {
-      max-width: 300px;
-      max-height: 300px;
-    }
-    .border2 {
-      max-width: 300px;
-      max-height: 300px;
-    }
-    .border3 {
-      max-width: 300px;
-      max-height: 300px;
+  .inner {
+    .down {
+      padding: 2%;
+      .border {
+        height: 100px;
+        font-size: 1rem;
+        border: 0.5rem solid #000000;
+        line-height: 100px;
+      }
     }
   }
 }
-@media screen and (max-widh: 768px) {
+@media screen and (max-width: 768px) {
   .inner {
     width: 100%;
     .up {
+      margin-bottom: 4rem;
       .title {
-        font-size: 2rem;
+        font-size: 1.2rem;
       }
       .content {
-        font-size: 1.8rem;
+        font-size: 1rem;
+      }
+      .more{
+        border: 0.2rem solid white;
+        font-size: 1rem;
       }
     }
   }
