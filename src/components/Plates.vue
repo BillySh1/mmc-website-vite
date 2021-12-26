@@ -9,8 +9,8 @@
         <div>{{ leftContent }}</div>
         <div>{{ leftContent }}</div>
         <div>{{ leftContent }}</div>
+        <img class="line" src="../assets/images/line.png" alt="line" />
       </div>
-      <img class='line' src="../assets/images/line.png" alt="line" />
       <div class="more">MORE</div>
     </div>
     <div class="right">
@@ -34,7 +34,7 @@
           </div>
           <div>
             <p>用户铸造NFT</p>
-            <p>NFT交易MMC销毁</p>
+            <p>交易销毁MMC</p>
             <p>全网征集故事</p>
           </div>
         </div>
@@ -45,7 +45,7 @@
           </div>
           <div>
             <p>IDO项目方案</p>
-            <p>优质项目首次代币发行</p>
+            <p>优质项目IDO</p>
           </div>
         </div>
         <div class="item">
@@ -193,9 +193,9 @@ export default {
     width: 100%;
     padding: 5% 0;
     align-items: center;
-    .line{
+    .line {
       max-width: 80%;
-    }    
+    }
   }
   .right {
     width: 100%;
@@ -210,20 +210,43 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+  .left {
+    display: flex;
+    flex-direction: row;
+
+    .content {
+      .content1 {
+        font-size: 0.8rem;
+        line-height: unset;
+        text-align: center;
+      }
+      font-size: 0.5rem;
+      line-height: unset;
+      text-align: center;
+    }
+    img {
+      margin: 2rem 0;
+    }
+    .more {
+      font-size: 1rem;
+      border: 0.3rem solid white;
+      padding: 1rem 0;
+    }
+  }
   .right {
     padding: 10% 0;
     .grid {
       grid-template-columns: repeat(2, 1fr);
-      padding:0;
+      padding: 0;
+      font-size: xx-small;
+      grid-gap: 1rem;
       .item {
         width: 100%;
-        flex-direction: column;
         text-align: center;
-        justify-content: center;
-        font-size: 1rem;
-        .itemLeft{
-          img{
-            width: 8rem
+        font-size: xx-small;
+        .itemLeft {
+          img {
+            width: 4rem;
           }
         }
         .infinity {
@@ -231,9 +254,12 @@ export default {
         }
       }
     }
-  }
-  .bottom{
-    margin-top: 2rem !important;
+    .bottom {
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      text-align: right;
+    }
   }
 }
 </style>
