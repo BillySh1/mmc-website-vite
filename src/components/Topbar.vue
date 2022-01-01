@@ -11,7 +11,7 @@
         <div class="title">MEMORY</div>
       </div>
       <div class="menuBox">
-        <a @click="() => hrefJump(0)" class="menuItem">{{t('token_allo')}}</a>
+        <a @click="() => hrefJump(0)" class="menuItem">{{ t("token_allo") }}</a>
         <a @click="() => hrefJump(1)" class="menuItem">生态</a>
         <a @click="() => hrefJump(2)" class="menuItem">NFT交易</a>
       </div>
@@ -37,10 +37,8 @@ export default {
         .getElementById(map[index])
         .scrollIntoView({ behavior: "smooth" });
     };
-    onBeforeMount(() => {
-    });
-    onMounted(() => {
-    });
+    onBeforeMount(() => {});
+    onMounted(() => {});
     const refData = toRefs(data);
     return {
       ...refData,
@@ -112,29 +110,32 @@ export default {
 }
 
 @media screen and (max-width: 540px) {
-  .title {
-    font-size: x-small;
-  }
-  .img {
-    width: 1rem;
-  }
-  .menuBox {
-    margin-left: 0.5rem;
-  }
-  .menuItem {
-    font-size: x-small;
-    margin: 0 0.5rem;
-  }
-  .lang {
-    width: 1rem;
+  .box {
+    .title {
+      font-size: x-small;
+    }
+    .img {
+      width: 1rem;
+    }
+    .menuBox {
+      margin-left: 0.5rem;
+    }
+    .menuItem {
+      font-size: x-small;
+    }
+    .lang {
+      width: 1rem;
+    }
   }
 }
 @media screen and (max-width: 320px) {
-  .title {
-    margin-left: 0;
-  }
-  .menuItem {
-    margin: 0;
+  .box {
+    .title {
+      margin-left: 0;
+    }
+    .menuItem {
+      margin: 0 4px;
+    }
   }
 }
 </style>

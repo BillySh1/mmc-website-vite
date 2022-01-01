@@ -12,13 +12,28 @@
         </div>
         <div class="down">
           <div class="border">
-            <img src="../assets/images/nft1.png" alt="nft1" width="100%" height="100%" />
+            <img
+              src="../assets/images/nft1.png"
+              alt="nft1"
+              width="100%"
+              height="100%"
+            />
           </div>
           <div class="border border2">
-            <img src="../assets/images/nft2.png" alt="nft1" width="100%" height="100%" />
+            <img
+              src="../assets/images/nft2.png"
+              alt="nft1"
+              width="100%"
+              height="100%"
+            />
           </div>
           <div class="border border2">
-            <img src="../assets/images/nft3.png" alt="nft1" width="100%" height="100%" />
+            <img
+              src="../assets/images/nft3.png"
+              alt="nft1"
+              width="100%"
+              height="100%"
+            />
           </div>
         </div>
       </div>
@@ -112,8 +127,8 @@ export default {
       height: 300px;
       min-height: 300px;
     }
-    .border2{
-      width: 250px
+    .border2 {
+      width: 250px;
     }
   }
 }
@@ -160,8 +175,17 @@ export default {
         font-size: 1rem;
       }
     }
-    .down{
-      .border{
+    .down {
+      .border {
+        min-height: 200px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .inner {
+    .down {
+      .border {
         min-height: 100px;
       }
     }

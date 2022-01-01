@@ -2,98 +2,43 @@
   <div id="nftExchange" class="box">
     <div class="left">
       <div class="content">
-        <div class="content1">{{ leftContent }}</div>
-        <div>{{ leftContent }}</div>
-        <br />
-        <br />
-        <div>{{ leftContent }}</div>
-        <div>{{ leftContent }}</div>
-        <div>{{ leftContent }}</div>
+        <div class="contentUp">
+          <div class="item" v-for="(item, index) in leftContent" :key="index">
+            <div>{{ item.left }}</div>
+            <div>
+              {{ item.right }}
+            </div>
+          </div>
+        </div>
         <img class="line" src="../assets/images/line.png" alt="line" />
       </div>
       <div class="more">MORE</div>
     </div>
-    <div class="right">
-      <div class="grid">
-        <div class="item">
-          <div class="itemLeft">
-            <img src="../assets/images/circle.png" alt="circle" />
-            <div class="vcenter">MMC机制</div>
-          </div>
-          <div>
-            <p>买入</p>
-            <p>卖出</p>
-            <p>护盘</p>
-            <p>抽奖</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="itemLeft">
-            <img src="../assets/images/border2.jpg" alt="border2" />
-            <div class="vcenter">NFT市场</div>
-          </div>
-          <div>
-            <p>用户铸造NFT</p>
-            <p>交易销毁MMC</p>
-            <p>全网征集故事</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="itemLeft">
-            <img src="../assets/images/trai.png" alt="trai" />
-            <div class="vcenter">IDO</div>
-          </div>
-          <div>
-            <p>IDO项目方案</p>
-            <p>优质项目IDO</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="itemLeft">
-            <img src="../assets/images/radius.png" alt="radius" />
-            <div class="vcenter">理财收益</div>
-          </div>
-          <div>
-            <p>LP质押挖矿</p>
-            <p>单币无损挖矿</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="itemLeft">
-            <img src="../assets/images/rect.png" alt="rect" />
-            <div class="vcenter">NFT生态</div>
-          </div>
-          <div>
-            <p>MMC抽取盲盒</p>
-            <p>NFT生态收益</p>
-            <p>高等级卡牌售卖</p>
-          </div>
-        </div>
-        <div class="item">
-          <img class="infinity" src="../assets/images/infinity.png" alt="ini" />
-        </div>
-      </div>
-      <div class="bottom">CORE PLATES</div>
-    </div>
+    <div class="right">222</div>
   </div>
 </template>
 
 <script lang="ts">
-import { reactive, toRefs, onBeforeMount, onMounted } from "vue";
+import { reactive, toRefs } from "vue";
 interface DataProps {}
 export default {
   name: "Plates",
   setup() {
-    console.log("1-开始创建组件-setup");
     const data: DataProps = reactive({
-      leftContent: "In the world's first story NFT Market",
+      leftContent: [
+        { left: "IDO", right: "15" },
+        { left: "(FARM, POOLS) MINING", right: "50" },
+        { left: "REGULAR LENDING, NFT LENDING", right: "5" },
+        { left: "NFT ECOLOGY", right: "10" },
+        { left: "MACHINE GUN POOL", right: "5" },
+        { left: "CHANGE TO ZERO", right: "3" },
+        { left: "SWAP PROMOTION AMBASSADOR", right: "0.5" },
+        { left: "COMMUNITY INCENTIVE PROMOTION", right: "1.5" },
+        { left: "BOARD OF DIRECTORS", right: "5" },
+        { left: "ECOLOGICAL RESERVE", right: "5" },
+      ],
     });
-    onBeforeMount(() => {
-      console.log("2.组件挂载页面之前执行----onBeforeMount");
-    });
-    onMounted(() => {
-      console.log("3.-组件挂载到页面之后执行-------onMounted");
-    });
+
     const refData = toRefs(data);
     return {
       ...refData,
@@ -107,8 +52,8 @@ export default {
   height: 100vh;
 }
 .left {
-  width: 20%;
-  background: #eedd22;
+  width: 25%;
+  background: #29bca6;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,8 +69,18 @@ export default {
   .content {
     text-align: left;
     line-height: 1.5rem;
-    .content1 {
+    .contentUp {
       font-size: 1.2rem;
+      color: white;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .item {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
     }
   }
   .more {
@@ -143,45 +98,9 @@ export default {
 }
 .right {
   width: 100%;
-  background-image: url("../assets/images/platesBg.jpg");
-  background-size: 100% 100%;
+  background-image: url("../assets/images/platesPc.jpg");
+  background-size: cover;
   padding: 5rem;
-  .grid {
-    font-size: 1.2rem;
-    font-family: Source Han Sans TC;
-    font-weight: bold;
-    text-decoration: underline;
-    color: #ffffff;
-    width: 100%;
-    padding-right: 10rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem;
-    .item {
-      text-align: right;
-      width: 80%;
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .itemLeft {
-        position: relative;
-        .vcenter {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-    }
-  }
-  .bottom {
-    font-size: 3.5rem;
-    font-family: Arial;
-    font-weight: 900;
-    color: #ffffff;
-    text-align: right;
-  }
 }
 
 @media screen and(max-width: 1280px) {
@@ -200,25 +119,16 @@ export default {
   .right {
     width: 100%;
     padding: 5%;
-    background-size: cover;
-    .bottom {
-      font-size: 2rem;
-      margin: 1rem 0;
-      text-align: center;
-    }
   }
 }
 
 @media screen and (max-width: 768px) {
   .left {
     display: flex;
-    flex-direction: row;
-
     .content {
-      .content1 {
-        font-size: 0.8rem;
-        line-height: unset;
-        text-align: center;
+      .contentUp {
+        font-size: 1rem;
+        padding: 0 1rem;
       }
       font-size: 0.5rem;
       line-height: unset;
@@ -235,31 +145,12 @@ export default {
   }
   .right {
     padding: 10% 0;
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
-      padding: 0;
-      font-size: xx-small;
-      grid-gap: 1rem;
-      .item {
-        width: 100%;
-        text-align: center;
-        font-size: xx-small;
-        .itemLeft {
-          img {
-            width: 4rem;
-          }
-        }
-        .infinity {
-          max-width: 80%;
-        }
-      }
-    }
-    .bottom {
-      font-size: 2rem;
-      margin-top: 1rem;
-      margin-bottom: 0;
-      text-align: right;
-    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .right {
+    background-image: url("../assets/images/platesMobile.jpg");
+    background-size: 100%;
   }
 }
 </style>
