@@ -160,6 +160,11 @@ export default {
         font-size: 1rem;
       }
     }
+    .down{
+      .border{
+        min-height: 100px;
+      }
+    }
   }
 }
 </style>
