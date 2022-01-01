@@ -1,5 +1,5 @@
 export default{
-    mining:"NFT Mining",
+    token_allo:"Token Allocation",
     rich:"NFT Rich",
     exchange:"NFT Exchange",
 }

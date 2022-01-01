@@ -2,29 +2,49 @@
   <div id="nftMining" class="box">
     <div class="content">
       <div class="left">
-        <div class="border">
-          <img src="../assets/images/mofang.png" alt="mofang" />
-        </div>
+        <img src="../assets/images/pledge.png" alt="pledge" width="100%" />
+        <img
+          class="ab"
+          src="../assets/images/mofang.png"
+          alt="mofang"
+          width="50%"
+        />
       </div>
       <div class="right">
-        <div class="pledgeMining">PLEDGE MINING</div>
+        <div class="pledgeMining">TOKEN ALLOCATION</div>
         <div class="subMiningContent">
-          <div class="top">
-            The ecology gradually improved and began to seekmore possibilities.
+          <div class="fontstyle1">20% IDO</div>
+          <div class="fontstyle2">
+            Unlock 2% of the totalamount linearly every day
           </div>
-          <br />
-          <br />
-          <div>
-            The ecology gradually improved and began to seekmore
-            possibilities.The ecology gradually improved and began to seekmore
-            possibilities.
+          <div class="fontstyle1">1% ACTIVE AIRDROP + 4% TEAM OPERATION</div>
+          <div class="fontstyle2">
+            linear unlocking 3 months after the project is launched
+          </div>
+          <div class="fontstyle1">5% MOBILE POOL:</div>
+          <div class="fontstyle2">
+            after the mobile pool is opened for 7 days, 10% of the tokens
+          </div>
+          <div class="fontstyle1">
+            60% SWAP MINING OUTPUT + 10% NFT ECOLOGICAL MINING
+          </div>
+          <div class="fontstyle1">
+            MMC'S FINANCING FUND WILL BE DIVIDED INTO
+          </div>
+          <div class="fontstyle1">
+            FLOW POOL, PROTECTION POOL AND LOTTERY POOL
           </div>
         </div>
-        <div class="blue">THE ECLOGY GRADUALLY 2022.01</div>
-        <div class="bottom">
-          <div class="more">MORE</div>
-          <img class="arrow" src="../assets/images/right.png" alt="right" />
-        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="icons">
+        <img src="../assets/images/zu18.png" alt="zu18" />
+        <img src="../assets/images/zu19.png" alt="zu19" />
+      </div>
+      <div class="moreBox">
+        <img class="arrow" src="../assets/images/right.png" alt="right" />
+        <div class="more">MORE</div>
       </div>
     </div>
   </div>
@@ -37,10 +57,8 @@ export default {
   name: "",
   setup() {
     const data: DataProps = reactive({});
-    onBeforeMount(() => {
-    });
-    onMounted(() => {
-    });
+    onBeforeMount(() => {});
+    onMounted(() => {});
     const refData = toRefs(data);
     return {
       ...refData,
@@ -50,28 +68,29 @@ export default {
 </script>
 <style lang="less" scoped>
 .box {
-  background-image: url("../assets/images/pledgeBg.png");
-  background-size: 100% 100%;
+  padding: 5% 0;
+  background-image: url("../assets/images/pledgePc.png");
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 .content {
   width: 80%;
   display: flex;
   justify-content: space-between;
   .left {
-    width: 50%;
+    width: 45%;
+    position: relative;
     display: flex;
     align-items: center;
-    .border {
-      width: fit-content;
-      display: flex;
-      justify-items: center;
-      align-items: center;
-      padding: 10rem 8rem;
-      border: 5px solid white;
+    .ab {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
   }
   .right {
@@ -80,39 +99,58 @@ export default {
       width: 100%;
       text-align: center;
       border: 9px solid white;
-      padding: 0.5rem 1rem;
-      font-size: 4.5rem;
+      font-size: 4rem;
       font-weight: 900;
       color: #ffffff;
-      margin-bottom: 2rem;
     }
     .subMiningContent {
-      font-size: 1.5rem;
-      font-weight: normal;
-      font-style: italic;
-      color: #ffffff;
-      margin-bottom: 3rem;
+      color: white;
+      margin-top: 1rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+
+      .fontstyle1 {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      .fontstyle2 {
+        font-size: 1.2rem;
+        font-style: italic;
+      }
     }
   }
-  .blue {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #0091c9;
-    margin-bottom: 6rem;
-  }
-  .bottom {
+}
+.bottom {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  .icons {
     display: flex;
-    flex-direction: row-reverse;
-    cursor: pointer;
-    align-items: center;
+    gap: 4rem;
     img {
-      margin-right: 2rem;
+      max-height: 4rem;
+    }
+  }
+  img {
+    max-height: 6rem;
+  }
+  .moreBox {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    .arrow {
       max-height: 2rem;
+      margin-right: 2rem;
     }
     .more {
-      border: 10px solid white;
-      padding: 0.5rem 0;
-      width: 50%;
+      border: 7px solid white;
+      padding: 1rem 0;
+      width: 100%;
       text-align: center;
       font-size: 2rem;
       font-family: zihun143-zhengkuchaojihei;
@@ -124,6 +162,7 @@ export default {
 
 @media screen and (max-width: 1280px) {
   .box {
+    background-image: url("../assets/images/pledgeBg.jpg");
     height: unset;
     background-size: cover;
     flex-direction: column;
@@ -133,12 +172,14 @@ export default {
   .content {
     width: 100%;
     flex-direction: column;
+    align-items: center;
     .left {
       width: 100%;
+      max-width: 30rem;
       justify-content: center;
       .border {
         padding: 3.5rem 3rem;
-        img{
+        img {
           max-width: 5rem;
         }
       }
@@ -148,7 +189,7 @@ export default {
       width: 100%;
       margin: 2rem 0rem;
       text-align: center;
-      .subMiningContent{
+      .subMiningContent {
         font-size: 1.2rem;
       }
       .pledgeMining {
@@ -157,14 +198,29 @@ export default {
         padding: 0;
       }
     }
-    .blue{
+    .blue {
       font-size: 1.5rem;
       margin-bottom: 1rem;
     }
-    .bottom {
-      align-items: center;
+  }
+  .bottom {
+    width: 100%;
+    align-items: center;
+  }
+}
+@media screen and(max-width: 768px) {
+  .bottom {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .moreBox {
+      width: 80%;
+      margin-top: 1rem;
+      .arrow {
+        max-height: 2rem;
+      }
       .more {
-        border: 0.3rem solid white;
         font-size: 1rem;
       }
     }

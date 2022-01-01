@@ -94,7 +94,7 @@ export default {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: #29bca6;
+  background-color: #0B1A37;
   padding: 3.5rem;
   font-family: Arial;
   cursor: pointer;

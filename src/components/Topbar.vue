@@ -6,17 +6,17 @@
           class="img"
           src="../assets/images/logo.png"
           alt="logo"
-          width="60"
+          width="40"
         />
         <div class="title">MEMORY</div>
       </div>
       <div class="menuBox">
-        <a @click="() => hrefJump(0)" class="menuItem">{{t('mining')}}</a>
-        <a @click="() => hrefJump(1)" class="menuItem">NFT-RICH</a>
+        <a @click="() => hrefJump(0)" class="menuItem">{{t('token_allo')}}</a>
+        <a @click="() => hrefJump(1)" class="menuItem">生态</a>
         <a @click="() => hrefJump(2)" class="menuItem">NFT交易</a>
       </div>
     </div>
-    <img class="lang" src="../assets/images/lang.png" width="40" />
+    <img class="lang" src="../assets/images/lang.png" width="30" />
   </div>
 </template>
 
@@ -65,7 +65,7 @@ export default {
   align-items: center;
 }
 .title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   word-spacing: 40;
   font-weight: bold;
   margin-left: 2rem;
@@ -80,7 +80,8 @@ export default {
   }
 }
 .menuItem {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
   margin: 0 1.5rem;
   cursor: pointer;
   word-break: keep-all;

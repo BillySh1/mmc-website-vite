@@ -35,7 +35,8 @@ export default {
 </script>
 <style lang="less" scoped>
 .box {
-  background-color: #0b152b;
+  background-image: url('../assets/images/gamefibg.png');
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

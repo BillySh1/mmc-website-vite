@@ -11,9 +11,15 @@
           <div class="more">MORE</div>
         </div>
         <div class="down">
-          <div class="border">NFT</div>
-          <div class="border">NFT</div>
-          <div class="border">NFT</div>
+          <div class="border">
+            <img src="../assets/images/nft1.png" alt="nft1" width="100%" height="100%" />
+          </div>
+          <div class="border border2">
+            <img src="../assets/images/nft2.png" alt="nft1" width="100%" height="100%" />
+          </div>
+          <div class="border border2">
+            <img src="../assets/images/nft3.png" alt="nft1" width="100%" height="100%" />
+          </div>
         </div>
       </div>
     </div>
@@ -57,7 +63,7 @@ export default {
   justify-content: center;
 }
 .inner {
-  width: 80%;
+  width: 70%;
   .up {
     display: flex;
     margin-bottom: 6rem;
@@ -104,6 +110,10 @@ export default {
       line-height: 300px;
       width: 300px;
       height: 300px;
+      min-height: 300px;
+    }
+    .border2{
+      width: 250px
     }
   }
 }
@@ -145,7 +155,7 @@ export default {
       .content {
         font-size: 1rem;
       }
-      .more{
+      .more {
         border: 0.2rem solid white;
         font-size: 1rem;
       }

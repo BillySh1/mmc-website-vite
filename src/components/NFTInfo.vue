@@ -1,14 +1,13 @@
 <template>
   <div class="box">
-    <div class="title">NFT 创作交易平台</div>
+    <div class="title">代币经济</div>
     <div class="divider">
-      <img src="../assets/images/divider.png" alt="divider"  />
+      <img src="../assets/images/divider.png" alt="divider" />
     </div>
     <div class="content">
-      <div>我们就是这个世界的艺术家， 不停的创作着不同的故事</div>
-      <div>
-        MEMORY COIN每一个值得珍藏的故事都会在平台制作成一个基于HRC_721的NFT-VR卡片。
-      </div>
+        MEMORY SWAP TOKEN (MMC) 是MEMORY S WAP 发行的应用代币。是推动MEMORY
+        SWAP网络发展的重要中介。基于 MEMORY SWAP
+        的经济模型，鼓励所有参与者和开发者通过代币的社区治理投资于整体生态网络的维护。
     </div>
   </div>
 </template>
@@ -37,17 +36,18 @@ export default {
 <style lang="less" scoped>
 .box {
   background-color: white;
-  padding: 2rem 7rem;
+  padding: 2rem 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 4rem
 }
 .title {
   font-size: 2.5rem;
   font-family: zihun143-zhengkuchaojihei;
-  font-weight: 400;
+  font-weight: bold;
   color: #484848;
-  width: -webkit-fill-available;
+  word-break: keep-all;
 }
 .content {
   font-size: 1.5rem;
@@ -56,21 +56,22 @@ export default {
   color: #0b152b;
 }
 @media screen and (max-width: 768px) {
-  .box{
-    padding: 5% 2px;
-    .divider{
-      max-width: 1rem;
-      img{
+  .box {
+    padding: 5% 5px;
+    gap: 1rem;
+    .divider {
+      max-width: 1.5rem;
+      img {
         width: 50%;
       }
     }
-  .title{
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  .content{
-    font-size: 0.5rem;
-  }
+    .title {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .content {
+      font-size: 0.5rem;
+    }
   }
 }
 </style>

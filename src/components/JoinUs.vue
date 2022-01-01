@@ -34,7 +34,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .box {
-  background-color: #d326e3;
+  background-color: #29BCA6;
   display: flex;
   align-items: center;
   justify-content: space-between;

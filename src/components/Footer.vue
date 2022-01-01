@@ -5,7 +5,7 @@
       <img class='colorBall' src="../assets/images/colorBall.png" alt="color" />
     </div>
     <img class="rightTop" src="../assets/images/rightTop.png" alt="rightTop" />
-    <img class="star" src="../assets/images/en-star.png" alt="en" />
+    <img class="star" src="../assets/images/en_star.png" alt="en" />
     <div class="footer">
       <img class='logo' src="../assets/images/mmcBlack.png" alt="logo" />
       <div class="content">GAME FI | NFT-THE THREE KINDOMS  MMC | AGAINST </div>
