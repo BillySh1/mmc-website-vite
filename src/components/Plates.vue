@@ -244,7 +244,7 @@ export default {
     padding: 10% 0;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .right {
     background-image: url("../assets/images/platesMobile.jpg");
     background-size: 100%;

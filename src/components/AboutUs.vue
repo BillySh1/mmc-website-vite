@@ -74,7 +74,7 @@ export default {
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .box{
     padding: 2rem 0
   }

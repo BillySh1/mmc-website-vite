@@ -2,8 +2,7 @@
   <div id="nftMining" class="box">
     <div class="content">
       <div class="left">
-        <img src="../assets/images/zu25.png" alt="pledge" />
-       
+        <img class='ab' src="../assets/images/zu25.svg" alt="pledge" />
       </div>
       <div class="right">
         <div class="pledgeMining">TOKEN ALLOCATION</div>
@@ -78,14 +77,11 @@ export default {
   justify-content: space-between;
   .left {
     width: 45%;
-    position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     .ab {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      width: 80%;
     }
   }
   .right {
@@ -204,6 +200,13 @@ export default {
   }
 }
 @media screen and(max-width: 768px) {
+  .box{
+    .left{
+      .ab{
+        width: 30%
+      }
+    }
+  }
   .bottom {
     margin-top: 1rem;
     display: flex;
@@ -221,7 +224,7 @@ export default {
     }
   }
 }
-@media screen and(max-width: 375px) {
+@media screen and(max-width: 414px) {
   .box{
     .right{
       .pledgeMining{
