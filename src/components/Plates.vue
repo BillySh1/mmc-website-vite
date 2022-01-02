@@ -14,7 +14,23 @@
       </div>
       <div class="more">MORE</div>
     </div>
-    <div class="right">222</div>
+    <div class="right">
+      <div class="title">
+        <img src="../assets/images/steam.png" alt="steam" />
+        <div class="letter">AGAINST MECHANISM</div>
+      </div>
+      <div class="rContent">
+        <div
+          class="rContentItem"
+          v-for="(item, index) in rightContent"
+          :key="index"
+        >
+          <div class="rLeft">{{ item.left }}</div>
+          <div class="rRight">{{ item.right }}</div>
+        </div>
+      </div>
+      <div class="bottom"><img src="../assets/gameFiBottom.png" alt="b" /></div>
+    </div>
   </div>
 </template>
 
@@ -36,6 +52,28 @@ export default {
         { left: "COMMUNITY INCENTIVE PROMOTION", right: "1.5" },
         { left: "BOARD OF DIRECTORS", right: "5" },
         { left: "ECOLOGICAL RESERVE", right: "5" },
+      ],
+      rightContent: [
+        {
+          left: "B U Y",
+          right:
+            "when buying MMC, burn 10% of the payment tokens, of which 40% enter the lottery pool and 70% protect the plates pool",
+        },
+        {
+          left: "S E L L",
+          right:
+            "when buying MMC, burn 10% of the payment tokens, of which 40% enter the lottery pool and 70% protect the plates pool",
+        },
+        {
+          left: "AUTOMATIC BUY IN",
+          right:
+            "when the MMC price is lower than 30% of the initial liquidity price, it will automatically buy in batches, buy half of the usdt in the pool each time, and store the MMC obtained by the MMC in the contract address",
+        },
+        {
+          left: "SPATIOTEMPORAL EGGS",
+          right:
+            "after 888 transactions, five lucky users with MMC positions of more than 100000 will be selected to share 5% of the lucky draw pool",
+        },
       ],
     });
 
@@ -101,6 +139,43 @@ export default {
   background-image: url("../assets/images/platesPc.jpg");
   background-size: cover;
   padding: 5rem;
+  text-align: center;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    .letter {
+      font-size: 1.8rem;
+      font-family: Arial-Black;
+      color: #ffffff;
+      letter-spacing: 2rem;
+    }
+  }
+  .rContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #ffffff;
+    margin: 5rem 0;
+    .rContentItem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .rLeft {
+        min-width: 40%;
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: Arial-Black;
+      }
+      .rRight {
+        font-size: 1rem;
+        font-family: Arial-ItalicMT;
+        font-style: italic;
+        text-align: left;
+      }
+    }
+  }
 }
 
 @media screen and(max-width: 1280px) {
@@ -117,8 +192,30 @@ export default {
     }
   }
   .right {
+    padding: 5% 0;
     width: 100%;
-    padding: 5%;
+    .title {
+      flex-direction: column;
+    }
+    .rContent {
+      align-items: center;
+      gap: 2rem;
+      .rContentItem {
+        max-width: 80%;
+        flex-direction: column;
+        .rRight {
+          text-align: center;
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      img {
+        max-width: 100%;
+      }
+    }
   }
 }
 
@@ -151,6 +248,11 @@ export default {
   .right {
     background-image: url("../assets/images/platesMobile.jpg");
     background-size: 100%;
+    .title {
+      .letter {
+        letter-spacing: 0;
+      }
+    }
   }
 }
 </style>

@@ -1,7 +1,20 @@
 <template>
   <div class="box">
-    <div class="up"></div>
+    <div class="up">
+      <img src="../assets/gamefi2.png" alt="" />
+      <img src="../assets/arrowUp.png" alt="" />
+    </div>
     <img class="gamefi" src="../assets/images/gameFi.png" alt="gamefi" />
+    <div class="up">
+      <img src="../assets/gamefi1.png" alt="" />
+      <img src="../assets/gamefi3.png" alt="" />
+    </div>
+    <div class="content">
+      <div class="font1">NFT LENDING/NFT MARKET/NFT MINING</div>
+      <div class="font2">NFT-RICH GAMEFI</div>
+      <div class="font3">THEREUM / OEC / FIRECOIN CHAIN</div>
+      <div class="border">MEMORYSWAP</div>
+    </div>
   </div>
 </template>
 
@@ -30,32 +43,44 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5%;
 }
 .gamefi {
-  width: 100%;
+  width: 80%;
 }
 .up {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  width: 80%;
-  .upLeft {
-    .more {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 5px solid white;
-      padding: 0.5rem 0;
-      width: 80%;
-      font-size: 2rem;
-      max-height: 3rem;
-      font-family: zihun143-zhengkuchaojihei;
-      font-weight: bold;
-      color: #ffffff;
-    }
-  }
   img {
-    max-width: 700px;
-    max-height: 700px;
+    max-width: 10%;
+    height: auto;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  color: #ffffff;
+
+  .font1 {
+    font-size: 1.8rem;
+    font-family: Arial-Black;
+  }
+  .font2 {
+    font-size: 3rem;
+    font-family: Arial-Black;
+  }
+  .font3 {
+    font-size: 1.5rem;
+    font-family: Arial-ItalicMT;
+  }
+  .border {
+    cursor: pointer;
+    border: 10px solid #ffffff;
+    font-size: 1.8rem;
+    font-family: Arial-Black;
   }
 }
 
@@ -65,7 +90,6 @@ export default {
     background-size: 100%;
     .up {
       width: 100%;
-      flex-direction: column-reverse;
       align-items: center;
       gap: 2rem;
     }
