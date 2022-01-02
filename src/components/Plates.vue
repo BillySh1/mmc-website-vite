@@ -16,7 +16,7 @@
     </div>
     <div class="right">
       <div class="title">
-        <img src="../assets/images/steam.png" alt="steam" />
+        <img class='steam' src="../assets/images/steam.png" alt="steam" />
         <div class="letter">AGAINST MECHANISM</div>
       </div>
       <div class="rContent">
@@ -249,8 +249,27 @@ export default {
     background-image: url("../assets/images/platesMobile.jpg");
     background-size: 100%;
     .title {
+      .steam{
+        width: 47px
+      }
       .letter {
-        letter-spacing: 0;
+        font-size: 10px;
+        letter-spacing: 10px;
+      }
+    }
+    .rContent {
+      .rContentItem {
+        .rLeft{
+          font-size: 10px;
+        }
+        .rRight {
+          font-size: 8px;
+        }
+      }
+    }
+    .bottom{
+      img{
+        max-width: 80%;
       }
     }
   }

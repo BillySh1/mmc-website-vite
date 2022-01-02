@@ -95,4 +95,29 @@ export default {
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .box{
+    .gamefi{
+      width: 100%
+    }
+    .content{
+      margin-top: 2rem;
+      .font1{
+        font-size: 12px;
+      }
+      .font2{
+        font-size: 21px;
+      }
+      .font3{
+        font-size: 9px;
+      }
+      .border{
+        font-size: 10px;
+        border: 5px solid white;
+      }
+    }
+  }
+  
+}
 </style>

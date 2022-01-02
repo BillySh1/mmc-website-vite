@@ -2,13 +2,8 @@
   <div id="nftMining" class="box">
     <div class="content">
       <div class="left">
-        <img src="../assets/images/pledge.png" alt="pledge" width="100%" />
-        <img
-          class="ab"
-          src="../assets/images/mofang.png"
-          alt="mofang"
-          width="50%"
-        />
+        <img src="../assets/images/zu25.png" alt="pledge" />
+       
       </div>
       <div class="right">
         <div class="pledgeMining">TOKEN ALLOCATION</div>
@@ -225,5 +220,23 @@ export default {
       }
     }
   }
+}
+@media screen and(max-width: 375px) {
+  .box{
+    .right{
+      .pledgeMining{
+        font-size: 16px;
+      }
+      .subMiningContent{
+        .fontstyle1{
+          font-size: 10px;
+        }
+        .fontstyle2{
+          font-size: 9px;
+        }
+      }
+    }
+  }
+  
 }
 </style>

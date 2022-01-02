@@ -74,4 +74,15 @@ export default {
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .box{
+    padding: 2rem 0
+  }
+  .title{
+    font-size: 20px;
+  }
+  .content{
+    font-size: 8px;
+  }
+}
 </style>
