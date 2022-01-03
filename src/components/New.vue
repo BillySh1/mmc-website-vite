@@ -4,14 +4,18 @@
       <img src="../assets/images/rect.jpg" alt="rect" />
       <div class="leftPara">
         <div class="leftParaContent">
-          MMC'S FINANCING FUND WILL BE DIVIDED INTO: FLOW POOL, PROTECTION POOL
-          AND LOTTERY POOL
+          <div style="color: #0b152b">
+            Distribution of financing assets in MemorySwap
+          </div>
+          <div>Liquid pool Rewarding pool Stock protection pool</div>
         </div>
         <div></div>
       </div>
     </div>
     <div class="right">
-      <img src="../assets/images/divider.png" alt="divider" />
+      <div class="divider">
+        <img src="../assets/images/divider.png" alt="divider" />
+      </div>
       <a href="https://memoryswap.net" target="_blank" class="link"
         >GO TO <br />MEMORYSWAP</a
       >
@@ -44,7 +48,7 @@ export default {
 <style lang="less" scoped>
 .box {
   background-color: white;
-  padding: 5rem 7rem;
+  padding: 1rem 4rem;
   display: flex;
   justify-content: space-between;
   font-style: italic;
@@ -54,7 +58,7 @@ export default {
   display: flex;
   align-items: center;
   img {
-    height: 12rem;
+    height: 10rem;
     margin-right: 1rem;
   }
 }
@@ -84,6 +88,15 @@ export default {
     color: #009de8;
     margin: 1rem 4rem 0rem 3rem;
   }
+  .divider {
+      max-width: 1rem;
+      img {
+        width: 100%;
+      }
+    }
+  .mmc{
+    max-width: 6rem;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -91,7 +104,6 @@ export default {
     flex-wrap: wrap;
     padding: 1rem;
     .left {
-     
       .leftParaContent {
         font-size: 1rem;
       }

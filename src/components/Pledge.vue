@@ -2,40 +2,26 @@
   <div id="nftMining" class="box">
     <div class="content">
       <div class="left">
-        <img class='ab' src="../assets/images/zu25.svg" alt="pledge" />
+        <img class="ab" src="../assets/images/zu25.svg" alt="pledge" />
       </div>
       <div class="right">
         <div class="pledgeMining">TOKEN ALLOCATION</div>
         <div class="subMiningContent">
-          <div class="fontstyle1">20% IDO</div>
+          <div class="fontstyle1">15% PRE-SALE IDO</div>
+          <div class="fontstyle2">5% CONVENTIONAL LOANS, NFT LOANS</div>
+          <div class="fontstyle1">50% (FARM, POOLS) MINING</div>
+          <div class="fontstyle2">5% MACHINE GUN POOL</div>
+          <div class="fontstyle1">5% ZClASSIC EXCHANGE</div>
           <div class="fontstyle2">
-            Unlock 2% of the totalamount linearly every day
+            0.5% PROMOTION ANGEL OF SWAP 1.5% BASIC ASSOCIATED COMMUNITY
           </div>
-          <div class="fontstyle1">1% ACTIVE AIRDROP + 4% TEAM OPERATION</div>
-          <div class="fontstyle2">
-            linear unlocking 3 months after the project is launched
-          </div>
-          <div class="fontstyle1">5% MOBILE POOL:</div>
-          <div class="fontstyle2">
-            after the mobile pool is opened for 7 days, 10% of the tokens
-          </div>
-          <div class="fontstyle1">
-            60% SWAP MINING OUTPUT + 10% NFT ECOLOGICAL MINING
-          </div>
-          <div class="fontstyle1">
-            MMC'S FINANCING FUND WILL BE DIVIDED INTO
-          </div>
-          <div class="fontstyle1">
-            FLOW POOL, PROTECTION POOL AND LOTTERY POOL
-          </div>
+          <div class="fontstyle1">5% DEVELOPMENt COMMITTEE</div>
+          <div class="fontstyle1">5% NFT ECOLOGY</div>
+          <div class="fontstyle1">RESERVED ECOLOGY</div>
         </div>
       </div>
     </div>
     <div class="bottom">
-      <div class="icons">
-        <img src="../assets/images/zu18.png" alt="zu18" />
-        <img src="../assets/images/zu19.png" alt="zu19" />
-      </div>
       <div class="moreBox">
         <img class="arrow" src="../assets/images/right.png" alt="right" />
         <div class="more">MORE</div>
@@ -108,8 +94,11 @@ export default {
         font-weight: bold;
       }
       .fontstyle2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-style: italic;
+        font-family: Arial-ItalicMT;
+        color: #ffffff;
+        opacity: 1;
       }
     }
   }
@@ -117,16 +106,10 @@ export default {
 .bottom {
   width: 60%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-direction: row-reverse;
   margin-top: 4rem;
-  .icons {
-    display: flex;
-    gap: 4rem;
-    img {
-      max-height: 4rem;
-    }
-  }
+
   img {
     max-height: 6rem;
   }
@@ -134,6 +117,7 @@ export default {
     width: 40%;
     display: flex;
     align-items: center;
+    place-self: flex-end;
     .arrow {
       max-height: 2rem;
       margin-right: 2rem;
@@ -200,10 +184,10 @@ export default {
   }
 }
 @media screen and(max-width: 768px) {
-  .box{
-    .left{
-      .ab{
-        width: 30%
+  .box {
+    .left {
+      .ab {
+        width: 30%;
       }
     }
   }
@@ -225,21 +209,20 @@ export default {
   }
 }
 @media screen and(max-width: 414px) {
-  .box{
-    .right{
-      .pledgeMining{
+  .box {
+    .right {
+      .pledgeMining {
         font-size: 16px;
       }
-      .subMiningContent{
-        .fontstyle1{
+      .subMiningContent {
+        .fontstyle1 {
           font-size: 10px;
         }
-        .fontstyle2{
+        .fontstyle2 {
           font-size: 9px;
         }
       }
     }
   }
-  
 }
 </style>

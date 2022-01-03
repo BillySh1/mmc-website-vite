@@ -1,13 +1,12 @@
 <template>
   <div class="box">
-    <div class="title">代币经济</div>
+    <div class="title">Token economy</div>
     <div class="divider">
       <img src="../assets/images/divider.png" alt="divider" />
     </div>
     <div class="content">
-        MEMORY SWAP TOKEN (MMC) 是MEMORY S WAP 发行的应用代币。是推动MEMORY
-        SWAP网络发展的重要中介。基于 MEMORY SWAP
-        的经济模型，鼓励所有参与者和开发者通过代币的社区治理投资于整体生态网络的维护。
+      MEMORY SWAP TOKEN (MMC) is an application token issued by MEMORY S WAP,
+      which is an important token to prompt the development of MEMORY LABS.
     </div>
   </div>
 </template>
@@ -18,14 +17,9 @@ interface DataProps {}
 export default {
   name: "",
   setup() {
-    console.log("1-开始创建组件-setup");
     const data: DataProps = reactive({});
-    onBeforeMount(() => {
-      console.log("2.组件挂载页面之前执行----onBeforeMount");
-    });
-    onMounted(() => {
-      console.log("3.-组件挂载到页面之后执行-------onMounted");
-    });
+    onBeforeMount(() => {});
+    onMounted(() => {});
     const refData = toRefs(data);
     return {
       ...refData,
@@ -36,11 +30,17 @@ export default {
 <style lang="less" scoped>
 .box {
   background-color: white;
-  padding: 2rem 10%;
+  padding: 1rem 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 4rem
+  gap: 4rem;
+  .divider{
+    max-width: 1rem;
+    img{
+      width: 100%;
+    }
+  }
 }
 .title {
   font-size: 2.5rem;
@@ -48,6 +48,7 @@ export default {
   font-weight: bold;
   color: #484848;
   word-break: keep-all;
+  width: -webkit-fill-available
 }
 .content {
   font-size: 1.5rem;
@@ -59,12 +60,7 @@ export default {
   .box {
     padding: 5% 5px;
     gap: 1rem;
-    .divider {
-      max-width: 1.5rem;
-      img {
-        width: 50%;
-      }
-    }
+    
     .title {
       font-size: 1rem;
       font-weight: bold;

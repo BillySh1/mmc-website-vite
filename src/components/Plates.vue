@@ -3,12 +3,7 @@
     <div class="left">
       <div class="content">
         <div class="contentUp">
-          <div class="item" v-for="(item, index) in leftContent" :key="index">
-            <div>{{ item.left }}</div>
-            <div>
-              {{ item.right }}
-            </div>
-          </div>
+          
         </div>
         <img class="line" src="../assets/images/line.png" alt="line" />
       </div>

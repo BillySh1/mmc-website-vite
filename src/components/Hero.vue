@@ -1,26 +1,25 @@
 <template>
   <div class="box">
     <div class="left">
-      <div class="title ani">Memory coin</div>
+      <div class="title ani">Memory Labs</div>
+      <div class="middle ani">Swap ecological application of the platform</div>
       <div>
         <div class="subTitle ani">
-          <div>Discovery</div>
-          <div>Collect</div>
-          <div>Extraordinary story NFT</div>
-          <div class="secondary">in the world's first story NFT Market</div>
+          <div>NFT trading platform of the creation</div>
+          <div>Gamefi platform for resource integration</div>
+          <div class="secondary">
+            Public blockchain for the development of multiple ecologies <br/>
+            Open
+            source wallet of integrated blockchains
+          </div>
         </div>
       </div>
     </div>
-    <div class="right ani">
-      <div>TIME COURSE</div>
-      <div>CORE PLATES</div>
-      <div>NFT-RICH</div>
-      <div>智能聚合交易</div>
-    </div>
+
     <a class="go2Swap" href="https://memoryswap.net" target="_blank">
       <div class="title">Go to SWAP</div>
       <div class="sub">Create your own value</div>
-      <img class='arrow' src="../assets/images/yellowArrow.png" alt="arrow" />
+      <img class="arrow" src="../assets/images/yellowArrow.png" alt="arrow" />
     </a>
   </div>
 </template>
@@ -31,14 +30,9 @@ interface DataProps {}
 export default {
   name: "",
   setup() {
-    console.log("1-开始创建组件-setup");
     const data: DataProps = reactive({});
-    onBeforeMount(() => {
-      console.log("2.组件挂载页面之前执行----onBeforeMount");
-    });
-    onMounted(() => {
-      console.log("3.-组件挂载到页面之后执行-------onMounted");
-    });
+    onBeforeMount(() => {});
+    onMounted(() => {});
     const refData = toRefs(data);
     return {
       ...refData,
@@ -58,6 +52,12 @@ export default {
   display: flex;
   justify-content: space-between;
 }
+.middle {
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-style: italic;
+  color: #f1f1f1;
+}
 .title {
   color: white;
   font-size: 7rem;
@@ -70,31 +70,25 @@ export default {
   justify-content: space-between;
 }
 .subTitle {
-  font-size: 5rem;
-  font-family: Arial;
-  font-weight: 900;
-  color: #f1f1f1;
-  .secondary {
-    font-size: 2rem;
-    font-weight: normal;
-    font-style: italic;
-  }
-}
-.right {
   font-size: 3rem;
   font-family: Arial;
   font-weight: 900;
   color: #f1f1f1;
-  display: flex;
-  flex-direction: column-reverse;
-  margin-bottom: 16rem;
+  font-style: italic;
+  margin-bottom: 4rem;
+  .secondary {
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: italic;
+  }
 }
+
 .go2Swap {
   text-decoration: none;
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: #0B1A37;
+  background-color: #0b1a37;
   padding: 3.5rem;
   font-family: Arial;
   cursor: pointer;
@@ -126,40 +120,38 @@ export default {
   }
 }
 
-
 @media screen and (max-width: 1280px) {
   .box {
     padding: 5%;
     background-size: cover;
     flex-direction: column;
   }
-  .title{
+  .title {
     font-size: 3rem;
   }
-  .subTitle{
-    font-size: 2rem;
-    margin: 2rem 0;
-    .secondary{
-      font-size: 1.5rem;
-    }
-  }
-  .right{
+  .middle{
     font-size: 2rem;
   }
-  .go2Swap{
-    padding: 5%;
-    .title{
-      font-size: 1.5rem;
-    }
-    .sub{
+  .subTitle {
+    font-size: 2rem;
+    margin: 3rem 0;
+    .secondary {
+      margin-top:1rem;
       font-size: 1rem;
     }
-    .arrow{
+  }
+
+  .go2Swap {
+    padding: 5%;
+    .title {
+      font-size: 1.5rem;
+    }
+    .sub {
+      font-size: 1rem;
+    }
+    .arrow {
       width: 100%;
     }
-  }
-  .right{
-    margin-bottom: 10rem;
   }
 }
 </style>
