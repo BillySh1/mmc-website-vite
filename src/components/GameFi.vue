@@ -10,9 +10,10 @@
       <img src="../assets/gamefi3.png" alt="" />
     </div>
     <div class="content">
+      <div class='font1'>NFT ECOLOGY</div>
       <div class="font1">NFT LENDING/NFT MARKET/NFT MINING</div>
-      <div class="font2">NFT-RICH GAMEFI</div>
-      <div class="font3">THEREUM / OEC / FIRECOIN CHAIN</div>
+      <div class="font1">NFT-RICH GAMEFI</div>
+      <div class="font3">ETHEREUM / OEC / FIRECOIN CHAIN</div>
       <div class="border">MEMORYSWAP</div>
     </div>
   </div>
@@ -66,10 +67,6 @@ export default {
 
   .font1 {
     font-size: 1.8rem;
-    font-family: Arial-Black;
-  }
-  .font2 {
-    font-size: 3rem;
     font-family: Arial-Black;
   }
   .font3 {

@@ -29,7 +29,6 @@ export default {
   setup() {
     const { t } = useI18n();
     const data: DataProps = reactive({
-      isDrawerOpen: true,
     });
     const hrefJump = (index) => {
       const map = ["nftMining", "nftRich", "nftExchange"];

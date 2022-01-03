@@ -5,35 +5,56 @@
         <div class="up">
           <div>
             <div class="title">NFT-RICH</div>
-            <div class="content">In the world's first story NFT Market</div>
-            <div class="content">In the world's first story NFT Market</div>
+            <div class="content">
+              Rich Men in the Three Kingdoms is inspired from one of Chinese
+            </div>
+            <div class="content">
+              four greatest classic novels named the Romance of the Three
+              Kingdoms
+            </div>
           </div>
-          <div class="more">MORE</div>
+          <div class="more" v-if="showImg" @click="toggle">MORE</div>
+          <div class="more" v-if="!showImg" @click="toggle">BACK</div>
         </div>
-        <div class="down">
+        <div class="down" v-if="showImg">
           <div class="border">
-            <img
+            <!-- <img
               src="../assets/images/nft1.png"
               alt="nft1"
               width="100%"
               height="100%"
-            />
+            /> -->
+            NFT
           </div>
           <div class="border border2">
-            <img
+            <!-- <img
               src="../assets/images/nft2.png"
               alt="nft1"
               width="100%"
               height="100%"
-            />
+            /> -->
+            NFT
           </div>
           <div class="border border2">
-            <img
+            <!-- <img
               src="../assets/images/nft3.png"
               alt="nft1"
               width="100%"
               height="100%"
-            />
+            /> -->
+            NFT
+          </div>
+        </div>
+        <div class="down" v-if="!showImg">
+          <div class="downC">
+            It is the first strategic NFT card game incubated by the Memory
+            Labs. As an important component in NFT ecology of MMC, Rich Men in
+            the Three Kingdoms is operated by players focusing on card
+            strategies and random exploration. They can get more MMC earnings by
+            scrambling for cities, combatting against other players and
+            upgrading the weapons and equipment. Moreover, users can also get
+            characters, mounts and weapons of the game by drawing the mystery
+            box with the help of MMC token and start your era of play-to-earn.
           </div>
         </div>
       </div>
@@ -43,20 +64,21 @@
 
 <script lang="ts">
 import { reactive, toRefs, onBeforeMount, onMounted } from "vue";
-interface DataProps {}
+interface DataProps {
+  showImg: boolean;
+}
 export default {
   name: "",
   setup() {
-    console.log("1-开始创建组件-setup");
-    const data: DataProps = reactive({});
-    onBeforeMount(() => {
-      console.log("2.组件挂载页面之前执行----onBeforeMount");
-    });
-    onMounted(() => {
-      console.log("3.-组件挂载到页面之后执行-------onMounted");
-    });
+    const data: DataProps = reactive({ showImg: true });
+    const toggle = () => {
+      data.showImg = !data.showImg;
+    };
+    onBeforeMount(() => {});
+    onMounted(() => {});
     const refData = toRefs(data);
     return {
+      toggle,
       ...refData,
     };
   },
@@ -90,12 +112,14 @@ export default {
       color: #ffffff;
     }
     .content {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-family: Arial;
       font-weight: normal;
       color: #f1f1f1;
     }
     .more {
+      user-select: none;
+      cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -126,9 +150,18 @@ export default {
       width: 300px;
       height: 300px;
       min-height: 300px;
+      color: #454748;
     }
     .border2 {
       width: 250px;
+    }
+    .downC {
+      font-size: 1.8rem;
+      font-family: Arial;
+      font-weight: normal;
+      color: #ffffff;
+      opacity: 1;
+      font-style: it;
     }
   }
 }
@@ -184,9 +217,17 @@ export default {
 }
 @media screen and (max-width: 375px) {
   .inner {
+    .up {
+      .more {
+        font-size: 10px;
+      }
+    }
     .down {
       .border {
         min-height: 100px;
+      }
+      .downC {
+        font-size: 1rem;
       }
     }
   }
