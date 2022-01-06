@@ -1,5 +1,5 @@
 <template>
-  <div id="nftExchange" class="box">
+  <div id="MMC" class="box">
     <div class="left">
       <div class="content">
         <div class="contentUp">
@@ -36,18 +36,7 @@ export default {
   name: "Plates",
   setup() {
     const data: DataProps = reactive({
-      leftContent: [
-        { left: "IDO", right: "15" },
-        { left: "(FARM, POOLS) MINING", right: "50" },
-        { left: "REGULAR LENDING, NFT LENDING", right: "5" },
-        { left: "NFT ECOLOGY", right: "10" },
-        { left: "MACHINE GUN POOL", right: "5" },
-        { left: "CHANGE TO ZERO", right: "3" },
-        { left: "SWAP PROMOTION AMBASSADOR", right: "0.5" },
-        { left: "COMMUNITY INCENTIVE PROMOTION", right: "1.5" },
-        { left: "BOARD OF DIRECTORS", right: "5" },
-        { left: "ECOLOGICAL RESERVE", right: "5" },
-      ],
+     
       rightContent: [
         {
           left: "B U Y",
@@ -254,11 +243,14 @@ export default {
     }
     .rContent {
       .rContentItem {
+        margin-bottom: 4px;
         .rLeft{
           font-size: 10px;
+          margin-bottom: 4px;
         }
         .rRight {
           font-size: 8px;
+          line-height: 1.5;
         }
       }
     }

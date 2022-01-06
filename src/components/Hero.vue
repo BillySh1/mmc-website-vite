@@ -17,7 +17,7 @@
     </div>
 
     <a class="go2Swap" href="https://memoryswap.net" target="_blank">
-      <div class="title">Go to SWAP</div>
+      <div class="stitle">Go to SWAP</div>
       <div class="sub">Create your own value</div>
       <img class="arrow" src="../assets/images/yellowArrow.png" alt="arrow" />
     </a>
@@ -92,7 +92,7 @@ export default {
   padding: 3.5rem;
   font-family: Arial;
   cursor: pointer;
-  .title {
+  .stitle {
     font-size: 3rem;
     font-weight: normal;
     color: #ffffff;
@@ -143,7 +143,7 @@ export default {
 
   .go2Swap {
     padding: 5%;
-    .title {
+    .stitle {
       font-size: 1.5rem;
     }
     .sub {
@@ -151,6 +151,20 @@ export default {
     }
     .arrow {
       width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 411px) {
+  .box{
+    .title{
+      font-size: 2.5rem;
+    }
+    .middle{
+      margin-top:2rem;
+      font-size: 1.5rem;
+    }
+    .subTitle{
+      font-size: 1.5rem;
     }
   }
 }

@@ -7,6 +7,7 @@
       <div class="right">
         <div class="pledgeMining">TOKEN ALLOCATION</div>
         <div class="subMiningContent">
+          <div class='fontstyle1'>TOTAL TOKENS： 1 BILLION 400 MILLION</div>
           <div class="fontstyle1">15% PRE-SALE IDO</div>
           <div class="fontstyle2">5% CONVENTIONAL LOANS, NFT LOANS</div>
           <div class="fontstyle1">50% (FARM, POOLS) MINING</div>

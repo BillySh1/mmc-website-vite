@@ -1,5 +1,5 @@
 <template>
-  <div class="box">
+  <div id='about' class="box">
     <div class="title">ABOUT US</div>
     <div class="content">
       Memory labs was established in Tokyo in 2019. We are tirelessly

@@ -12,15 +12,6 @@
         <div></div>
       </div>
     </div>
-    <div class="right">
-      <div class="divider">
-        <img src="../assets/images/divider.png" alt="divider" />
-      </div>
-      <a href="https://memoryswap.net" target="_blank" class="link"
-        >GO TO <br />MEMORYSWAP</a
-      >
-      <img class="mmc" src="../assets/images/mmcBlack.png" alt="mmc" />
-    </div>
   </div>
 </template>
 
@@ -30,13 +21,10 @@ interface DataProps {}
 export default {
   name: "",
   setup() {
-    console.log("1-开始创建组件-setup");
     const data: DataProps = reactive({});
     onBeforeMount(() => {
-      console.log("2.组件挂载页面之前执行----onBeforeMount");
     });
     onMounted(() => {
-      console.log("3.-组件挂载到页面之后执行-------onMounted");
     });
     const refData = toRefs(data);
     return {
@@ -50,7 +38,7 @@ export default {
   background-color: white;
   padding: 1rem 4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-style: italic;
 }
 
@@ -75,29 +63,6 @@ export default {
   word-spacing: 0.2rem;
   letter-spacing: 0.1rem;
 }
-.right {
-  display: flex;
-  align-items: center;
-  .link {
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 3rem;
-    font-family: Arial;
-    font-weight: normal;
-    text-decoration: underline;
-    color: #009de8;
-    margin: 1rem 4rem 0rem 3rem;
-  }
-  .divider {
-      max-width: 1rem;
-      img {
-        width: 100%;
-      }
-    }
-  .mmc{
-    max-width: 6rem;
-  }
-}
 
 @media screen and (max-width: 1280px) {
   .box {
@@ -111,21 +76,16 @@ export default {
         height: 6rem;
       }
     }
-    .right {
-      width: 100%;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 1rem;
-      gap: 1rem;
-      img {
-        width: 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .box{
+    .left{
+      img{
+        max-height: 4rem;
       }
-      .link {
-        font-size: 1rem;
-        margin: 0rem 1rem;
-      }
-      .mmc {
-        width: 4rem;
+      .leftParaContent{
+        font-size: 12px;
       }
     }
   }

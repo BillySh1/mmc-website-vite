@@ -1,5 +1,5 @@
 <template>
-  <div class="box">
+  <div id='ecology' class="box">
     <div class="up">
       <img src="../assets/gamefi2.png" alt="" />
       <img src="../assets/arrowUp.png" alt="" />
@@ -99,7 +99,6 @@ export default {
       width: 100%
     }
     .content{
-      margin-top: 2rem;
       .font1{
         font-size: 12px;
       }

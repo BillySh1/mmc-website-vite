@@ -11,12 +11,14 @@
         <div class="title">MEMORY</div>
       </div>
       <div class="menuBox">
-        <a @click="() => hrefJump(0)" class="menuItem">{{ t("token_allo") }}</a>
-        <a @click="() => hrefJump(1)" class="menuItem">生态</a>
-        <a @click="() => hrefJump(2)" class="menuItem">NFT交易</a>
+        <a @click="() => hrefJump(0)" class="menuItem">TOKEN</a>
+        <a @click="() => hrefJump(1)" class="menuItem">MMC</a>
+        <a @click="() => hrefJump(2)" class="menuItem">NFT-RICH</a>
+        <a @click="() => hrefJump(3)" class="menuItem">ECOLOGY</a>
+        <a @click="() => hrefJump(4)" class="menuItem">ABOUT</a>
+        <a @click="() => hrefJump(5)" class="menuItem">ROUTE</a>
       </div>
     </div>
-    <img class="lang" src="../assets/images/lang.png" width="30" />
   </div>
 </template>
 
@@ -28,10 +30,9 @@ export default {
   name: "",
   setup() {
     const { t } = useI18n();
-    const data: DataProps = reactive({
-    });
+    const data: DataProps = reactive({});
     const hrefJump = (index) => {
-      const map = ["nftMining", "nftRich", "nftExchange"];
+      const map = ["nftMining", "MMC", "nftRich", "ecology", "about", "route"];
       document
         .getElementById(map[index])
         .scrollIntoView({ behavior: "smooth" });
@@ -102,10 +103,6 @@ export default {
     font-size: 1rem;
     margin: 0 1rem;
   }
-  .lang {
-    width: 2rem;
-    place-self: flex-end;
-  }
 }
 
 @media screen and (max-width: 540px) {
@@ -121,9 +118,6 @@ export default {
     }
     .menuItem {
       font-size: x-small;
-    }
-    .lang {
-      width: 1rem;
     }
   }
 }
