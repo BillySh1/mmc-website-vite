@@ -1,22 +1,36 @@
 <template>
   <div class="box">
     <div style="display: flex">
-      <div class="logoBox">
-        <img
-          class="img"
-          src="../assets/images/logo.png"
-          alt="logo"
-          width="40"
-        />
-        <div class="title">MEMORY</div>
+      <div :class="!isPc ? 'dropdown' : ''">
+        <div class="logoBox">
+          <img
+            class="img"
+            src="../assets/images/logo.png"
+            alt="logo"
+            width="40"
+          />
+          <div class="title">MEMORY</div>
+        </div>
+        <div class="dropdown-content">
+          <div
+            class="dropdown-item"
+            v-for="(item, index) in menuItems"
+            :key="index"
+            @click="() => hrefJump(index)"
+          >
+            {{ item }}
+          </div>
+        </div>
       </div>
-      <div class="menuBox">
-        <a @click="() => hrefJump(0)" class="menuItem">TOKEN</a>
-        <a @click="() => hrefJump(1)" class="menuItem">MMC</a>
-        <a @click="() => hrefJump(2)" class="menuItem">NFT-RICH</a>
-        <a @click="() => hrefJump(3)" class="menuItem">ECOLOGY</a>
-        <a @click="() => hrefJump(4)" class="menuItem">ABOUT</a>
-        <a @click="() => hrefJump(5)" class="menuItem">ROUTE</a>
+
+      <div v-if="isPc" class="menuBox">
+        <a
+          v-for="(item, index) in menuItems"
+          :key="index"
+          @click="() => hrefJump(index)"
+          class="menuItem"
+          >{{ item }}</a
+        >
       </div>
     </div>
   </div>
@@ -24,21 +38,34 @@
 
 <script lang="ts">
 import { reactive, toRefs, onBeforeMount, onMounted } from "vue";
-interface DataProps {}
+interface DataProps {
+  isPc: boolean;
+  isShowDrawer: boolean;
+  menuItems: string[];
+}
 import { useI18n } from "vue-i18n";
 export default {
   name: "",
   setup() {
     const { t } = useI18n();
-    const data: DataProps = reactive({});
+    const data: DataProps = reactive({
+      isPc: true,
+      isShowDrawer: false,
+      menuItems: ["TOKEN", "MMC", "NFT-RICH", "ECOLOGY", "ABOUT", "ROUTE"],
+    });
     const hrefJump = (index) => {
       const map = ["nftMining", "MMC", "nftRich", "ecology", "about", "route"];
       document
         .getElementById(map[index])
         .scrollIntoView({ behavior: "smooth" });
     };
+
     onBeforeMount(() => {});
-    onMounted(() => {});
+    onMounted(() => {
+      if (window.innerWidth < 768) {
+        data.isPc = false;
+      }
+    });
     const refData = toRefs(data);
     return {
       ...refData,
@@ -83,6 +110,32 @@ export default {
   margin: 0 1.5rem;
   cursor: pointer;
   word-break: keep-all;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #191b27;
+  color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  transform: translateY(0.5rem);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-item {
+  font-size: 16px;
+  padding: 12px 4px;
+  text-align: center;
+  font-weight: bold;
+}
+.dropdown-item:hover {
+  background: #16a6ee;
 }
 
 @media screen and (max-width: 1280px) {
