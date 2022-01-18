@@ -18,31 +18,28 @@
         </div>
         <div class="down" v-if="showImg">
           <div class="border">
-            <!-- <img
-              src="../assets/images/nft1.png"
+            <img
+              src="../assets/nfts/3.png"
               alt="nft1"
               width="100%"
               height="100%"
-            /> -->
-            NFT
+            />
           </div>
           <div class="border border2">
-            <!-- <img
-              src="../assets/images/nft2.png"
+           <img
+              src="../assets/nfts/2.png"
               alt="nft1"
               width="100%"
               height="100%"
-            /> -->
-            NFT
+            />
           </div>
           <div class="border border2">
-            <!-- <img
-              src="../assets/images/nft3.png"
+           <img
+              src="../assets/nfts/1.png"
               alt="nft1"
               width="100%"
               height="100%"
-            /> -->
-            NFT
+            />
           </div>
         </div>
         <div class="down" v-if="!showImg">

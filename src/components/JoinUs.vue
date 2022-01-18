@@ -58,6 +58,7 @@ export default {
 @media screen and (max-width: 375px) {
   .box{
     padding: 0.5rem 1rem;
+    font-size: 1rem;
   }
 }
 </style>
