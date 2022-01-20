@@ -123,7 +123,8 @@ export default {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 9999;
-  transform: translateY(0.5rem);
+  padding-top: 0.5rem;
+  transform: translate(-1rem);
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -161,16 +162,22 @@ export default {
 @media screen and (max-width: 540px) {
   .box {
     .title {
-      font-size: x-small;
+      font-size: small;
     }
     .img {
-      width: 1rem;
+      width: 1.5rem;
     }
     .menuBox {
       margin-left: 0.5rem;
     }
     .menuItem {
       font-size: x-small;
+    }
+    .dropdown{
+      .dropdown-item{
+        font-size: 12px;
+        padding: 12px 4px;
+      }
     }
   }
 }

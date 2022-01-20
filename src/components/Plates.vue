@@ -41,22 +41,22 @@ export default {
         {
           left: "B U Y",
           right:
-            "when buying MMC, burn 10% of the payment tokens, of which 40% enter the lottery pool and 70% protect the plates pool",
+            "when buying MMC, burn 10% of the payment tokens, of which 40% enter the lottery pool and 60% protect the plates pool",
         },
         {
           left: "S E L L",
           right:
-            "when buying MMC, burn 10% of the payment tokens, of which 40% enter the lottery pool and 70% protect the plates pool",
+            "when buying MMC, burn 15% of the payment tokens, of which 30% enter the lottery pool and 70% protect the plates pool",
         },
         {
           left: "AUTOMATIC BUY IN",
           right:
-            "when the MMC price is lower than 30% of the initial liquidity price, it will automatically buy in batches, buy half of the usdt in the pool each time, and store the MMC obtained by the MMC in the contract address",
+            "when the MMC price is lower than 20% of the initial liquidity price, it will automatically buy in batches, buy half of the usdt in the pool each time, and store the MMC obtained by the MMC in the contract address",
         },
         {
           left: "SPATIOTEMPORAL EGGS",
           right:
-            "after 888 transactions, five lucky users with MMC positions of more than 100000 will be selected to share 5% of the lucky draw pool",
+            "after 888 transactions, five lucky users with MMC positions of more than 100000 will be selected to share 10% of the lucky draw pool",
         },
       ],
     });
@@ -216,7 +216,7 @@ export default {
       text-align: center;
     }
     img {
-      margin: 2rem 0;
+      margin: 0.5rem 0;
     }
     .more {
       font-size: 1rem;

@@ -1,8 +1,8 @@
 <template>
   <div class="box">
-    <div>INTELLIGENT</div>
-    <div class='middle'>AGGREGATION</div>
-    <div class="followUs">FOLLOW US</div>
+    <div>MemoryChain</div>
+    <div class='middle'>MemoryWallet</div>
+    <div class="followUs">Memory NFT</div>
   </div>
 </template>
 
@@ -55,7 +55,7 @@ export default {
     margin: 1rem 0;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 540px) {
   .box{
     padding: 0.5rem 1rem;
     font-size: 1rem;

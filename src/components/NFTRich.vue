@@ -26,7 +26,7 @@
             />
           </div>
           <div class="border border2">
-           <img
+            <img
               src="../assets/nfts/2.png"
               alt="nft1"
               width="100%"
@@ -34,7 +34,7 @@
             />
           </div>
           <div class="border border2">
-           <img
+            <img
               src="../assets/nfts/1.png"
               alt="nft1"
               width="100%"
@@ -208,6 +208,18 @@ export default {
     .down {
       .border {
         min-height: 200px;
+      }
+      .downC{
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .inner {
+    .down {
+      .border {
+        min-height: 120px;
       }
     }
   }

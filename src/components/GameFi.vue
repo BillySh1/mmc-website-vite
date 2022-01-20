@@ -93,7 +93,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 540px) {
   .box{
     .gamefi{
       width: 100%
